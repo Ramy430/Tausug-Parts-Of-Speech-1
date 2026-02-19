@@ -1,0 +1,500 @@
+{
+  "vocabulary": [
+    /* ========== COLORS (Adjectives) ========== */
+    {
+      "id": "itum_1",
+      "tausug": "Itum",
+      "english": "black",
+      "definition": "The darkest color, like coal or the night sky.",
+      "examples": [
+        {
+          "tausug": "Itum in buhuk sin babai.",
+          "english": "The woman's hair is black."
+        }
+      ],
+      "pronunciation": "ee-TOOM"
+    },
+    {
+      "id": "puti_1",
+      "tausug": "Puti'",
+      "english": "white",
+      "definition": "The color of milk or fresh snow; reflecting all visible wavelengths of light.",
+      "examples": [
+        {
+          "tausug": "Puti' in bāy nila.",
+          "english": "Their house is white."
+        }
+      ],
+      "pronunciation": "poo-TEE",
+      "synonyms": ["Maputi"]
+    },
+    {
+      "id": "pula_1",
+      "tausug": "Pula",
+      "english": "red",
+      "definition": "The color of blood, fire, or rubies.",
+      "examples": [
+        {
+          "tausug": "Pula in dugù sin tau.",
+          "english": "A person's blood is red."
+        }
+      ],
+      "pronunciation": "poo-LA"
+    },
+    {
+      "id": "biyaning_1",
+      "tausug": "Biyaning",
+      "english": "yellow",
+      "definition": "The color of lemons, sunflowers, or egg yolks.",
+      "examples": [
+        {
+          "tausug": "Biyaning in bunga sin mangga.",
+          "english": "The mango fruit is yellow."
+        }
+      ],
+      "pronunciation": "bee-YAH-ning"
+    },
+    {
+      "id": "gaddung_1",
+      "tausug": "Gaddung",
+      "english": "green",
+      "definition": "The color of grass, leaves, or emeralds.",
+      "examples": [
+        {
+          "tausug": "Gaddung in dahun sin kahuy.",
+          "english": "The tree leaves are green."
+        }
+      ],
+      "pronunciation": "gad-DOONG"
+    },
+    {
+      "id": "bilo_1",
+      "tausug": "Bilo",
+      "english": "blue",
+      "definition": "The color of the clear sky or deep sea.",
+      "examples": [
+        {
+          "tausug": "Bilo in dagat ha Sulu.",
+          "english": "The sea in Sulu is blue."
+        }
+      ],
+      "pronunciation": "BEE-lo"
+    },
+    {
+      "id": "abuhun_1",
+      "tausug": "Abuhun",
+      "english": "brown",
+      "definition": "The color of wood, soil, or chocolate.",
+      "examples": [
+        {
+          "tausug": "Abuhun in yuta' ha bukid.",
+          "english": "The soil in the mountain is brown."
+        }
+      ],
+      "pronunciation": "a-boo-HOON"
+    },
+
+    /* ========== SIZE ADJECTIVES ========== */
+    {
+      "id": "dakula_1",
+      "tausug": "Dakula",
+      "english": "big, large",
+      "definition": "Of considerable size or extent.",
+      "examples": [
+        {
+          "tausug": "Dakula in isda sin manga mangingisda.",
+          "english": "The fishermen's fish is big."
+        },
+        {
+          "tausug": "Dakula in bay nila.",
+          "english": "Their house is big."
+        }
+      ],
+      "pronunciation": "da-koo-LA",
+      "antonyms": ["Diutay"]
+    },
+    {
+      "id": "diutay_1",
+      "tausug": "Diutay",
+      "english": "small, little",
+      "definition": "Of a size that is less than normal or usual.",
+      "examples": [
+        {
+          "tausug": "Diutay in bata' pero matalino.",
+          "english": "The child is small but smart."
+        },
+        {
+          "tausug": "Diutay in kakaun.",
+          "english": "The food is little/small amount."
+        }
+      ],
+      "pronunciation": "dee-oo-TIE",
+      "antonyms": ["Dakula"]
+    },
+    {
+      "id": "haba_1",
+      "tausug": "Haba'",
+      "english": "long",
+      "definition": "Measuring a great distance from end to end.",
+      "examples": [
+        {
+          "tausug": "Haba' in buhuk sin babai.",
+          "english": "The woman's hair is long."
+        }
+      ],
+      "pronunciation": "ha-BA",
+      "antonyms": ["Pipih"]
+    },
+    {
+      "id": "pipih_1",
+      "tausug": "Pipih",
+      "english": "short",
+      "definition": "Measuring a small distance from end to end.",
+      "examples": [
+        {
+          "tausug": "Pipih in buhuk sin lalaki.",
+          "english": "The man's hair is short."
+        }
+      ],
+      "pronunciation": "pee-PEEH",
+      "antonyms": ["Haba'"]
+    },
+
+    /* ========== QUALITY ADJECTIVES ========== */
+    {
+      "id": "marayaw_1",
+      "tausug": "Marayaw",
+      "english": "good, fine, well",
+      "definition": "To be desired or approved of; in a satisfactory condition.",
+      "examples": [
+        {
+          "tausug": "Marayaw lang aku, salamatt.",
+          "english": "I'm just fine, thank you."
+        },
+        {
+          "tausug": "Marayaw in pagkaun.",
+          "english": "The food is good."
+        }
+      ],
+      "pronunciation": "ma-RIE-ow",
+      "antonyms": ["Maraat"]
+    },
+    {
+      "id": "maraat_1",
+      "tausug": "Maraat",
+      "english": "bad, evil",
+      "definition": "Of poor quality or low standard; morally wrong.",
+      "examples": [
+        {
+          "tausug": "Maraat in batasan niya.",
+          "english": "His/her behavior is bad."
+        }
+      ],
+      "pronunciation": "ma-ra-AT",
+      "antonyms": ["Marayaw"]
+    },
+    {
+      "id": "malingkat_1",
+      "tausug": "Malingkat",
+      "english": "beautiful, pretty",
+      "definition": "Pleasing the senses or mind aesthetically.",
+      "examples": [
+        {
+          "tausug": "Malingkat in dagat ha sulod.",
+          "english": "The sea at sunset is beautiful."
+        },
+        {
+          "tausug": "Malingkat in babai.",
+          "english": "The woman is beautiful."
+        }
+      ],
+      "pronunciation": "ma-ling-KAT",
+      "synonyms": ["Maguapa"]
+    },
+    {
+      "id": "maguapa_1",
+      "tausug": "Maguapa",
+      "english": "beautiful (for women)",
+      "definition": "Specifically describes feminine beauty.",
+      "examples": [
+        {
+          "tausug": "Maguapa in nobya ku.",
+          "english": "My girlfriend is beautiful."
+        }
+      ],
+      "pronunciation": "ma-goo-AH-pa",
+      "notes": "Often used specifically for women, while malingkat can be used more broadly."
+    },
+
+    /* ========== QUANTITY ADJECTIVES ========== */
+    {
+      "id": "mataud_1",
+      "tausug": "Mataud",
+      "english": "many, a lot",
+      "definition": "A large number of.",
+      "examples": [
+        {
+          "tausug": "Mataud tawo ha piyista.",
+          "english": "There are many people at the festival."
+        },
+        {
+          "tausug": "Mataud isda nahuli.",
+          "english": "Many fish were caught."
+        }
+      ],
+      "pronunciation": "ma-TA-ood",
+      "antonyms": ["Diutay"]
+    },
+
+    /* ========== PRICE ADJECTIVES ========== */
+    {
+      "id": "mahal_1",
+      "tausug": "Mahal",
+      "english": "expensive",
+      "definition": "Costing a lot of money.",
+      "examples": [
+        {
+          "tausug": "Mahal in karita bago.",
+          "english": "The new car is expensive."
+        },
+        {
+          "tausug": "Mahal in mga prutas sa merkado.",
+          "english": "The fruits at the market are expensive."
+        }
+      ],
+      "pronunciation": "ma-HAL",
+      "antonyms": ["Mura"]
+    },
+    {
+      "id": "mura_1",
+      "tausug": "Mura",
+      "english": "cheap",
+      "definition": "Low in price; worth more than its cost.",
+      "examples": [
+        {
+          "tausug": "Mura in manga prutas ha talipapa.",
+          "english": "The fruits at the market are cheap."
+        }
+      ],
+      "pronunciation": "moo-RA",
+      "antonyms": ["Mahal"]
+    },
+
+    /* ========== TEMPERATURE ADJECTIVES ========== */
+    {
+      "id": "mapasu_1",
+      "tausug": "Mapasu",
+      "english": "hot",
+      "definition": "Having a high degree of heat or a high temperature.",
+      "examples": [
+        {
+          "tausug": "Mapasu in kape, ayaw hilabti.",
+          "english": "The coffee is hot, don't touch it."
+        },
+        {
+          "tausug": "Mapasu in adlaw.",
+          "english": "The sun is hot."
+        }
+      ],
+      "pronunciation": "ma-PA-soo",
+      "antonyms": ["Malamig"]
+    },
+    {
+      "id": "malamig_1",
+      "tausug": "Malamig",
+      "english": "cold",
+      "definition": "Of or at a low or relatively low temperature.",
+      "examples": [
+        {
+          "tausug": "Malamig in tubig ha sulod sin refrigerator.",
+          "english": "The water inside the refrigerator is cold."
+        },
+        {
+          "tausug": "Malamig in hangin kuman.",
+          "english": "The wind is cold now."
+        }
+      ],
+      "pronunciation": "ma-la-MEEG",
+      "antonyms": ["Mapasu"]
+    },
+
+    /* ========== TEXTURE ADJECTIVES ========== */
+    {
+      "id": "malum_1",
+      "tausug": "Malum",
+      "english": "soft",
+      "definition": "Easy to mold, cut, compress, or fold; not hard or firm to the touch.",
+      "examples": [
+        {
+          "tausug": "Malum in kama', marayaw katulugan.",
+          "english": "The bed is soft, good for sleeping."
+        },
+        {
+          "tausug": "Malum in unlan.",
+          "english": "The pillow is soft."
+        }
+      ],
+      "pronunciation": "ma-LOOM",
+      "antonyms": ["Matagus"]
+    },
+    {
+      "id": "matagus_1",
+      "tausug": "Matagus",
+      "english": "hard",
+      "definition": "Solid, firm, and resistant to pressure; not easily broken or bent.",
+      "examples": [
+        {
+          "tausug": "Matagus in batu, di' mabali.",
+          "english": "The stone is hard, it won't break."
+        },
+        {
+          "tausug": "Matagus in kahoy.",
+          "english": "The wood is hard."
+        }
+      ],
+      "pronunciation": "ma-TA-goos",
+      "antonyms": ["Malum"]
+    },
+    {
+      "id": "mahapdi_1",
+      "tausug": "Mahapdi",
+      "english": "painful",
+      "definition": "Causing physical pain or suffering.",
+      "examples": [
+        {
+          "tausug": "Mahapdi in samad ha bukun ku.",
+          "english": "The wound on my leg is painful."
+        }
+      ],
+      "pronunciation": "ma-HAP-dee"
+    },
+
+    /* ========== TASTE ADJECTIVES ========== */
+    {
+      "id": "masum_1",
+      "tausug": "Masūm",
+      "english": "sour",
+      "definition": "Having an acid taste like lemon or vinegar.",
+      "examples": [
+        {
+          "tausug": "Masūm in mangga hilaw.",
+          "english": "The unripe mango is sour."
+        }
+      ],
+      "pronunciation": "ma-SOOM",
+      "antonyms": ["Matam-is"]
+    },
+    {
+      "id": "matamis_1",
+      "tausug": "Matam-is",
+      "english": "sweet",
+      "definition": "Having the pleasant taste characteristic of sugar or honey.",
+      "examples": [
+        {
+          "tausug": "Matam-is in mangga hinog.",
+          "english": "The ripe mango is sweet."
+        },
+        {
+          "tausug": "Matam-is in kakaun.",
+          "english": "The food is sweet."
+        }
+      ],
+      "pronunciation": "ma-tam-EES",
+      "antonyms": ["Masūm"]
+    },
+    {
+      "id": "maasin_1",
+      "tausug": "Maasin",
+      "english": "salty",
+      "definition": "Tasting of or containing salt.",
+      "examples": [
+        {
+          "tausug": "Maasin in tubig dagat.",
+          "english": "The sea water is salty."
+        }
+      ],
+      "pronunciation": "ma-AH-sin"
+    },
+    {
+      "id": "mapait_1",
+      "tausug": "Mapait",
+      "english": "bitter",
+      "definition": "Having a sharp, pungent taste; not sweet, sour, or salty.",
+      "examples": [
+        {
+          "tausug": "Mapait in tambal.",
+          "english": "The medicine is bitter."
+        }
+      ],
+      "pronunciation": "ma-pa-EET"
+    },
+
+    /* ========== LIGHT ADJECTIVES ========== */
+    {
+      "id": "dum_1",
+      "tausug": "Dūm",
+      "english": "dark",
+      "definition": "With little or no light.",
+      "examples": [
+        {
+          "tausug": "Dūm na, subay na kita madtu ha bay.",
+          "english": "It's dark now, we should go home."
+        }
+      ],
+      "pronunciation": "DOOM",
+      "antonyms": ["Sanag"]
+    },
+    {
+      "id": "sanag_1",
+      "tausug": "Sanag",
+      "english": "bright, light",
+      "definition": "Giving out or reflecting a lot of light; shining.",
+      "examples": [
+        {
+          "tausug": "Sanag in adlaw ha udto.",
+          "english": "The sun is bright at noon."
+        },
+        {
+          "tausug": "Sanag in bulan.",
+          "english": "The moon is bright."
+        }
+      ],
+      "pronunciation": "SA-nag",
+      "antonyms": ["Dūm"]
+    },
+
+    /* ========== AGE ADJECTIVES ========== */
+    {
+      "id": "bago_1",
+      "tausug": "Bago",
+      "english": "new",
+      "definition": "Recently made, created, or purchased; not old.",
+      "examples": [
+        {
+          "tausug": "Bago in karita ku.",
+          "english": "My car is new."
+        },
+        {
+          "tausug": "Bago in bay nila.",
+          "english": "Their house is new."
+        }
+      ],
+      "pronunciation": "BA-go",
+      "antonyms": ["Daan"]
+    },
+    {
+      "id": "daan_1",
+      "tausug": "Daan",
+      "english": "old",
+      "definition": "Having existed for a long time; not new.",
+      "examples": [
+        {
+          "tausug": "Daan na in bay namun.",
+          "english": "Our house is already old."
+        }
+      ],
+      "pronunciation": "da-AN",
+      "antonyms": ["Bago"]
+    }
+  ]
+}
