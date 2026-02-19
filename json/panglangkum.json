@@ -1,1 +1,245 @@
+{
+  "vocabulary": [
+    /* ========== COORDINATING CONJUNCTIONS ========== */
+    {
+      "id": "iban_1",
+      "tausug": "Iban",
+      "english": "and",
+      "definition": "Used to connect words, phrases, or clauses of equal grammatical rank.",
+      "examples": [
+        {
+          "tausug": "In babai iban in usug naghihinang.",
+          "english": "The woman and the man are working."
+        },
+        {
+          "tausug": "Siya iban aku madtu pa bay.",
+          "english": "He/she and I will go home."
+        },
+        {
+          "tausug": "Kakaun iban iinumun kagunahan.",
+          "english": "Food and drink are needed."
+        }
+      ],
+      "pronunciation": "EE-ban",
+      "notes": "Used to join nouns, pronouns, and phrases."
+    },
+    {
+      "id": "atawa_1",
+      "tausug": "Atawa",
+      "english": "or",
+      "definition": "Used to link alternatives.",
+      "examples": [
+        {
+          "tausug": "Kape atawa tsa, inu in iban mu?",
+          "english": "Coffee or tea, which do you want?"
+        },
+        {
+          "tausug": "Madtu kaw kuman atawa sunud?",
+          "english": "Will you go now or tomorrow?"
+        }
+      ],
+      "pronunciation": "a-ta-WA"
+    },
+    {
+      "id": "kata_1",
+      "tausug": "Kata",
+      "english": "but, however",
+      "definition": "Used to introduce a contrast or exception.",
+      "examples": [
+        {
+          "tausug": "Mabaya' aku madtu, kata masakit aku.",
+          "english": "I want to go, but I am sick."
+        },
+        {
+          "tausug": "Marayaw in kakaun, kata mahal.",
+          "english": "The food is good, but expensive."
+        }
+      ],
+      "pronunciation": "ka-TA",
+      "synonyms": ["Hapdi"]
+    },
 
+    /* ========== SUBORDINATING CONJUNCTIONS ========== */
+    {
+      "id": "sabab_1",
+      "tausug": "Sabab",
+      "english": "because",
+      "definition": "For the reason that; since.",
+      "examples": [
+        {
+          "tausug": "Di' aku makatū sabab masakit in bukun ku.",
+          "english": "I cannot come because my body aches."
+        },
+        {
+          "tausug": "Nagdagan siya sabab mauran na.",
+          "english": "He ran because it was about to rain."
+        },
+        {
+          "tausug": "Malipay aku sabab madayaw kaw.",
+          "english": "I am happy because you are here."
+        }
+      ],
+      "pronunciation": "sa-BAB"
+    },
+    {
+      "id": "kakun_1",
+      "tausug": "Kākun",
+      "english": "if",
+      "definition": "Introducing a conditional clause.",
+      "examples": [
+        {
+          "tausug": "Kākun kaw magkaun, wayruun madtu pa iskul.",
+          "english": "If you eat, then go to school."
+        },
+        {
+          "tausug": "Kākun matapus aku, tawagan ta kaw.",
+          "english": "If I finish, I will call you."
+        },
+        {
+          "tausug": "Kākun may waktu, madtu kita.",
+          "english": "If there is time, we will go."
+        }
+      ],
+      "pronunciation": "KA-kon"
+    },
+    {
+      "id": "bang_1",
+      "tausug": "Bang",
+      "english": "when, if",
+      "definition": "Used to indicate time or condition.",
+      "examples": [
+        {
+          "tausug": "Bang siya umabut, sambatan mu.",
+          "english": "When he arrives, tell him."
+        },
+        {
+          "tausug": "Bang may kwarta aku, bumili aku.",
+          "english": "If I have money, I will buy."
+        }
+      ],
+      "pronunciation": "bang",
+      "notes": "Can mean either 'when' or 'if' depending on context."
+    },
+    {
+      "id": "sabap_1",
+      "tausug": "Sabap",
+      "english": "because of, due to",
+      "definition": "Indicating the cause or reason.",
+      "examples": [
+        {
+          "tausug": "Sabap kanya da aku makatū.",
+          "english": "Because of him/her, I couldn't come."
+        }
+      ],
+      "pronunciation": "sa-BAP",
+      "notes": "Similar to sabab but often used with nouns."
+    },
+
+    /* ========== COMPLEX CONJUNCTIONS ========== */
+    {
+      "id": "maski_1",
+      "tausug": "Maski",
+      "english": "even if, although",
+      "definition": "Introducing a concessive clause.",
+      "examples": [
+        {
+          "tausug": "Maski mauran, madtu aku.",
+          "english": "Even if it rains, I will go."
+        },
+        {
+          "tausug": "Maski mahal, bilihon ku.",
+          "english": "Even if expensive, I will buy it."
+        }
+      ],
+      "pronunciation": "mas-KEE",
+      "notes": "Borrowed from Spanish 'mas que'."
+    },
+    {
+      "id": "suga_1",
+      "tausug": "Suga'",
+      "english": "although, despite",
+      "definition": "In spite of the fact that.",
+      "examples": [
+        {
+          "tausug": "Suga' masakit siya, nagtrabaho pa.",
+          "english": "Although he is sick, he still worked."
+        }
+      ],
+      "pronunciation": "soo-GA"
+    },
+    {
+      "id": "hangguh_1",
+      "tausug": "Hangguh'",
+      "english": "until, as long as",
+      "definition": "Indicating duration or limit.",
+      "examples": [
+        {
+          "tausug": "Maghulat aku hangguh' siya umabut.",
+          "english": "I will wait until he arrives."
+        },
+        {
+          "tausug": "Hangguh' may adlaw, may pagasa.",
+          "english": "As long as there is day, there is hope."
+        }
+      ],
+      "pronunciation": "hang-GOOH"
+    },
+
+    /* ========== CONJUNCTIVE PHRASES ========== */
+    {
+      "id": "bunga_kun_1",
+      "tausug": "Bunga kun",
+      "english": "therefore, so",
+      "definition": "Indicating a result or consequence.",
+      "examples": [
+        {
+          "tausug": "Nagtuun siya, bunga kun nakapasar.",
+          "english": "He studied, therefore he passed."
+        }
+      ],
+      "pronunciation": "BOO-nga koon",
+      "notes": "Literally: 'the result is'"
+    },
+    {
+      "id": "hambi_1",
+      "tausug": "Hambi'",
+      "english": "in order to, so that",
+      "definition": "Indicating purpose or intention.",
+      "examples": [
+        {
+          "tausug": "Nagbasa aku hambi' makasabut.",
+          "english": "I read in order to understand."
+        }
+      ],
+      "pronunciation": "ham-BEE"
+    },
+
+    /* ========== CONJUNCTION SUMMARY ========== */
+    {
+      "id": "panglangkum_summary",
+      "tausug": "Panglangkum",
+      "english": "Conjunctions Overview",
+      "definition": "Words that connect words, phrases, or clauses in Tausug.",
+      "examples": [
+        {
+          "tausug": "Iban (and) - nagdugang",
+          "english": "Iban (and) - adds information"
+        },
+        {
+          "tausug": "Atawa (or) - nagpili",
+          "english": "Atawa (or) - gives choice"
+        },
+        {
+          "tausug": "Kata (but) - nagsuway",
+          "english": "Kata (but) - shows contrast"
+        },
+        {
+          "tausug": "Sabab (because) - naghatag rason",
+          "english": "Sabab (because) - gives reason"
+        }
+      ],
+      "pronunciation": "pang-lang-KOOM",
+      "notes": "Conjunctions are essential for forming complex sentences in Tausug."
+    }
+  ]
+}
