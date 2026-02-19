@@ -1,1 +1,497 @@
+/* styles.css - Tausug Parts of Speech */
 
+/* ===== RESET & BASE STYLES ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #2c5282;
+    --primary-dark: #1a365d;
+    --primary-light: #4299e1;
+    --secondary-color: #38a169;
+    --text-dark: #2d3748;
+    --text-medium: #4a5568;
+    --text-light: #718096;
+    --background-light: #f7fafc;
+    --background-white: #ffffff;
+    --border-color: #e2e8f0;
+    --shadow-sm: 0 1px 3px rgba(0,0,0,0.12);
+    --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
+    --shadow-lg: 0 10px 15px rgba(0,0,0,0.1);
+    --border-radius: 8px;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+    color: var(--text-dark);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+}
+
+/* ===== CONTAINER ===== */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* ===== HEADER ===== */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 40px 30px;
+    background: var(--background-white);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-lg);
+    border-bottom: 4px solid var(--primary-color);
+}
+
+h1 {
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+.subtitle {
+    color: var(--text-medium);
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* ===== BUTTONS CONTAINER ===== */
+.buttons-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+/* ===== SPEECH BUTTONS ===== */
+.speech-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 16px 20px;
+    border: 2px solid var(--primary-color);
+    background: var(--background-white);
+    color: var(--primary-color);
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: var(--shadow-sm);
+}
+
+.speech-btn:hover {
+    background: var(--primary-color);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.speech-btn:hover .btn-icon {
+    color: white;
+}
+
+.speech-btn.active {
+    background: var(--primary-color);
+    color: white;
+    border-color: var(--primary-dark);
+    transform: scale(1.02);
+    box-shadow: var(--shadow-md);
+}
+
+.speech-btn.active .btn-icon {
+    color: white;
+}
+
+.btn-icon {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+/* ===== CONTENT AREA ===== */
+.content-area {
+    background: var(--background-white);
+    border-radius: var(--border-radius);
+    padding: 30px;
+    box-shadow: var(--shadow-lg);
+    min-height: 500px;
+    border-top: 4px solid var(--primary-color);
+}
+
+/* ===== INITIAL CONTENT ===== */
+.initial-content {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.initial-content i {
+    font-size: 5rem;
+    color: var(--primary-color);
+    margin-bottom: 25px;
+    opacity: 0.8;
+}
+
+.initial-content h2 {
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.initial-content p {
+    color: var(--text-medium);
+    max-width: 600px;
+    margin: 15px auto;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* ===== PART OF SPEECH HEADER ===== */
+.part-of-speech-header {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid var(--border-color);
+}
+
+.part-of-speech-header h2 {
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.part-of-speech-header p {
+    color: var(--text-medium);
+    font-size: 1.1rem;
+}
+
+/* ===== WORDS CONTAINER ===== */
+.words-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 20px;
+}
+
+/* ===== WORD CARD ===== */
+.word-card {
+    background: var(--background-light);
+    border-radius: var(--border-radius);
+    padding: 20px;
+    border-left: 4px solid var(--primary-color);
+    box-shadow: var(--shadow-sm);
+    transition: all 0.3s ease;
+    height: fit-content;
+}
+
+.word-card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
+}
+
+.word-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.tausug-word {
+    font-size: 1.6rem;
+    color: var(--primary-color);
+    font-weight: 700;
+    margin: 0;
+}
+
+.pronunciation {
+    color: var(--text-light);
+    font-style: italic;
+    font-size: 0.9rem;
+    background: var(--background-white);
+    padding: 4px 8px;
+    border-radius: 20px;
+}
+
+.english-word {
+    font-size: 1.2rem;
+    color: var(--text-dark);
+    margin-bottom: 12px;
+    font-weight: 500;
+}
+
+.definition {
+    color: var(--text-medium);
+    line-height: 1.6;
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+}
+
+/* ===== EXAMPLES SECTION ===== */
+.examples {
+    background: var(--background-white);
+    padding: 15px;
+    border-radius: var(--border-radius);
+    margin: 15px 0;
+    border: 1px solid var(--border-color);
+}
+
+.examples h4 {
+    color: var(--primary-color);
+    margin-bottom: 12px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.examples ul {
+    list-style: none;
+}
+
+.examples li {
+    margin-bottom: 12px;
+    padding: 10px;
+    background: var(--background-light);
+    border-radius: 6px;
+    border-left: 3px solid var(--primary-light);
+}
+
+.example-tausug {
+    font-weight: 600;
+    color: var(--primary-dark);
+    margin-bottom: 5px;
+}
+
+.example-english {
+    color: var(--text-medium);
+    font-style: italic;
+    font-size: 0.95rem;
+}
+
+.example-context {
+    font-size: 0.85rem;
+    color: var(--text-light);
+    margin-top: 5px;
+}
+
+/* ===== NOTES, SYNONYMS, ANTONYMS ===== */
+.notes {
+    background: #fef3c7;
+    border-left: 4px solid #d97706;
+    padding: 12px;
+    border-radius: 6px;
+    margin-top: 15px;
+    font-size: 0.95rem;
+}
+
+.synonyms {
+    background: #def7ec;
+    border-left: 4px solid #0e9f6e;
+    padding: 12px;
+    border-radius: 6px;
+    margin-top: 10px;
+    font-size: 0.95rem;
+}
+
+.antonyms {
+    background: #fde8e8;
+    border-left: 4px solid #f05252;
+    padding: 12px;
+    border-radius: 6px;
+    margin-top: 10px;
+    font-size: 0.95rem;
+}
+
+.notes strong, .synonyms strong, .antonyms strong {
+    color: var(--text-dark);
+    margin-right: 5px;
+}
+
+/* ===== LOADING SPINNER ===== */
+.loading {
+    text-align: center;
+    padding: 60px 20px;
+    color: var(--primary-color);
+}
+
+.loading i {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+.loading p {
+    font-size: 1.2rem;
+    color: var(--text-medium);
+}
+
+/* ===== ERROR MESSAGE ===== */
+.error-message {
+    text-align: center;
+    padding: 60px 20px;
+    color: #c81e1e;
+    background: #fef2f2;
+    border-radius: var(--border-radius);
+    border: 1px solid #fc8181;
+}
+
+.error-message i {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    color: #c81e1e;
+}
+
+.error-message h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.error-message p {
+    color: #9b2c2c;
+    margin: 10px 0;
+}
+
+/* ===== PLACEHOLDER CONTENT ===== */
+.placeholder-content {
+    text-align: center;
+    padding: 60px 20px;
+    color: var(--text-medium);
+}
+
+.placeholder-content i {
+    font-size: 4rem;
+    color: var(--text-light);
+    margin-bottom: 20px;
+}
+
+.placeholder-content h3 {
+    color: var(--text-dark);
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    color: var(--background-white);
+    font-size: 0.95rem;
+    opacity: 0.9;
+}
+
+footer p {
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+    header {
+        padding: 30px 20px;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    .subtitle {
+        font-size: 1rem;
+    }
+    
+    .buttons-container {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    
+    .speech-btn {
+        padding: 14px;
+        font-size: 0.95rem;
+    }
+    
+    .content-area {
+        padding: 20px;
+    }
+    
+    .initial-content {
+        padding: 40px 15px;
+    }
+    
+    .initial-content h2 {
+        font-size: 1.5rem;
+    }
+    
+    .words-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .word-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+    
+    .tausug-word {
+        font-size: 1.4rem;
+    }
+    
+    .part-of-speech-header h2 {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+    
+    header {
+        padding: 20px 15px;
+    }
+    
+    h1 {
+        font-size: 1.6rem;
+    }
+    
+    .speech-btn {
+        padding: 12px;
+        font-size: 0.9rem;
+    }
+    
+    .word-card {
+        padding: 15px;
+    }
+    
+    .examples li {
+        padding: 8px;
+    }
+}
+
+/* ===== PRINT STYLES ===== */
+@media print {
+    .buttons-container {
+        display: none;
+    }
+    
+    .content-area {
+        box-shadow: none;
+        border: 1px solid #ddd;
+    }
+    
+    footer {
+        color: #666;
+    }
+}
