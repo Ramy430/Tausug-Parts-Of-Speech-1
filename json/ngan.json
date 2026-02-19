@@ -1,1 +1,356 @@
+{
+  "vocabulary": [
+    /* ========== BODY PARTS (Nouns) ========== */
+    {
+      "id": "lima_1",
+      "tausug": "Lima",
+      "english": "hand, five",
+      "definition": "The end part of a person's arm beyond the wrist; the number after four.",
+      "examples": [
+        {
+          "tausug": "Masakit in lima ku sabab nagdala aku sin mabugat.",
+          "english": "My hand hurts because I carried something heavy.",
+          "context": "As body part"
+        },
+        {
+          "tausug": "Lima in manga bata' ha sulod sin bāy.",
+          "english": "There are five children inside the house.",
+          "context": "As number"
+        }
+      ],
+      "pronunciation": "LEE-ma",
+      "notes": "Important example of a word with two distinct meanings (body part and number)."
+    },
+    {
+      "id": "buhok_1",
+      "tausug": "Buhok",
+      "english": "hair",
+      "definition": "Any of the fine threadlike strands growing from the skin of mammals.",
+      "examples": [
+        {
+          "tausug": "Haba' in buhuk sin anak ku babai.",
+          "english": "My daughter's hair is long."
+        }
+      ],
+      "pronunciation": "boo-HOK"
+    },
+    {
+      "id": "pais_1",
+      "tausug": "Pais",
+      "english": "skin",
+      "definition": "The thin layer of tissue forming the natural outer covering of the body.",
+      "examples": [
+        {
+          "tausug": "Maputi in pais sin bata'.",
+          "english": "The child's skin is fair."
+        }
+      ],
+      "pronunciation": "pa-EES"
+    },
+    {
+      "id": "alum_1",
+      "tausug": "Alum",
+      "english": "hematoma, bruise",
+      "definition": "A discoloration of the skin resulting from bleeding underneath, typically caused by injury.",
+      "examples": [
+        {
+          "tausug": "May alum in bukun ku sabab nahulug aku.",
+          "english": "I have a bruise on my leg because I fell."
+        }
+      ],
+      "pronunciation": "A-loom",
+      "notes": "Medical term for bruise or contusion."
+    },
 
+    /* ========== COMMON NOUNS ========== */
+    {
+      "id": "bay_1",
+      "tausug": "Bay",
+      "english": "house, home",
+      "definition": "A building for human habitation; a place where one lives permanently.",
+      "examples": [
+        {
+          "tausug": "Malingkat in bay nila ha dagat.",
+          "english": "Their house by the sea is beautiful."
+        },
+        {
+          "tausug": "Miss ku na in bay ku ha Jolo.",
+          "english": "I miss my home in Jolo already."
+        }
+      ],
+      "pronunciation": "ba-EE",
+      "synonyms": ["Balay"],
+      "notes": "Can refer to both the physical structure and the emotional concept of home."
+    },
+    {
+      "id": "tau_1",
+      "tausug": "Tau",
+      "english": "person, human being",
+      "definition": "A human being regarded as an individual.",
+      "examples": [
+        {
+          "tausug": "Mabayat in tau ha lalawigan sin Sulu.",
+          "english": "The people in the province of Sulu are kind."
+        }
+      ],
+      "pronunciation": "TA-oo",
+      "variants": ["Tao", "Two"]
+    },
+    {
+      "id": "manusiya_1",
+      "tausug": "Manusiya'",
+      "english": "people, mankind, humanity",
+      "definition": "Human beings collectively; the human race.",
+      "examples": [
+        {
+          "tausug": "In manga manusiya' subay magdaru'ungan.",
+          "english": "People should help each other."
+        }
+      ],
+      "pronunciation": "ma-noo-SEE-ya",
+      "notes": "Broader term than 'tau'; refers to humanity as a whole."
+    },
+    {
+      "id": "kakaun_1",
+      "tausug": "Kakaun",
+      "english": "food",
+      "definition": "Any nutritious substance that people or animals eat or drink.",
+      "examples": [
+        {
+          "tausug": "Masarap in kakaun ha handaan.",
+          "english": "The food at the feast is delicious."
+        }
+      ],
+      "pronunciation": "ka-KA-oon"
+    },
+    {
+      "id": "kaun_1",
+      "tausug": "Kaun",
+      "english": "food, meal",
+      "definition": "An instance of eating; the food consumed during a meal.",
+      "examples": [
+        {
+          "tausug": "Kaun na kita!",
+          "english": "Let's eat now!"
+        }
+      ],
+      "pronunciation": "KA-oon",
+      "notes": "Can also function as a verb meaning 'to eat'."
+    },
+    {
+      "id": "tagainup_1",
+      "tausug": "Tagainup",
+      "english": "dream",
+      "definition": "A series of thoughts, images, and sensations occurring in a person's mind during sleep.",
+      "examples": [
+        {
+          "tausug": "May aku tagainup kagabi' bang siya magbalik.",
+          "english": "I had a dream last night that he would return."
+        }
+      ],
+      "pronunciation": "ta-ga-EE-noop"
+    },
+    {
+      "id": "pali_1",
+      "tausug": "Pali'",
+      "english": "wound, injury, trauma",
+      "definition": "An injury to living tissue caused by a cut, blow, or other impact.",
+      "examples": [
+        {
+          "tausug": "Maluma' na in pali' ha bukun ku.",
+          "english": "The wound on my leg is healing now."
+        }
+      ],
+      "pronunciation": "pa-LEE"
+    },
+    {
+      "id": "katas_1",
+      "tausug": "Katas",
+      "english": "paper",
+      "definition": "Material manufactured in thin sheets from the pulp of wood.",
+      "examples": [
+        {
+          "tausug": "Katas ini para ha surat.",
+          "english": "This paper is for the letter."
+        }
+      ],
+      "pronunciation": "KA-tas"
+    },
+    {
+      "id": "kakana_1",
+      "tausug": "Kakana'",
+      "english": "cloth, fabric",
+      "definition": "Material produced by weaving or knitting textile fibers.",
+      "examples": [
+        {
+          "tausug": "Malingkat in kakana' sin badju' ku.",
+          "english": "The fabric of my dress is beautiful."
+        }
+      ],
+      "pronunciation": "ka-KA-na",
+      "synonyms": ["Tela"]
+    },
+    {
+      "id": "kapatus_1",
+      "tausug": "Kapatus",
+      "english": "shoes",
+      "definition": "A covering for the foot, typically made of leather.",
+      "examples": [
+        {
+          "tausug": "Bago in kapatus sin anak ku lalaki.",
+          "english": "My son's shoes are new."
+        }
+      ],
+      "pronunciation": "ka-PA-toos"
+    },
+    {
+      "id": "tawumpa_1",
+      "tausug": "Tawumpa'",
+      "english": "footwear, sandals",
+      "definition": "Garment worn on the feet, especially lightweight open shoes.",
+      "examples": [
+        {
+          "tausug": "Marayaw in tawumpa' ha init.",
+          "english": "Sandals are good for hot weather."
+        }
+      ],
+      "pronunciation": "ta-woom-PA",
+      "synonyms": ["Sandalyas"]
+    },
+    {
+      "id": "kappal_1",
+      "tausug": "Kappal",
+      "english": "ship, boat, vessel",
+      "definition": "A large watercraft that travels the world's oceans and seas.",
+      "examples": [
+        {
+          "tausug": "Dakula in kappal pa Zamboanga.",
+          "english": "The ship to Zamboanga is big."
+        }
+      ],
+      "pronunciation": "kap-PAL"
+    },
+    {
+      "id": "karita_1",
+      "tausug": "Karita",
+      "english": "car, vehicle",
+      "definition": "A road vehicle, typically with four wheels, powered by an engine.",
+      "examples": [
+        {
+          "tausug": "Bago in karita sin tuan.",
+          "english": "The man's car is new."
+        }
+      ],
+      "pronunciation": "ka-REE-ta",
+      "synonyms": ["Awto", "Sakayan"]
+    },
+    {
+      "id": "jali_1",
+      "tausug": "Jali'",
+      "english": "camouflage",
+      "definition": "The disguising of military personnel or equipment.",
+      "examples": [
+        {
+          "tausug": "Jali' in badju' sin sundalu.",
+          "english": "The soldier's uniform is camouflage."
+        }
+      ],
+      "pronunciation": "ja-LEE",
+      "notes": "Military term; can also mean patterned clothing."
+    },
+
+    /* ========== COLORS (as Nouns) ========== */
+    {
+      "id": "itum_noun_1",
+      "tausug": "Itum",
+      "english": "black (color)",
+      "definition": "The color black itself, when referred to as a concept.",
+      "examples": [
+        {
+          "tausug": "Kabayaan ku in itum.",
+          "english": "I like black (the color)."
+        }
+      ],
+      "pronunciation": "ee-TOOM",
+      "notes": "Colors can function as nouns when referring to the color concept itself."
+    },
+    {
+      "id": "puti_noun_1",
+      "tausug": "Puti'",
+      "english": "white (color)",
+      "definition": "The color white itself.",
+      "examples": [
+        {
+          "tausug": "Maganda in puti' ha badju'.",
+          "english": "White looks nice on clothing."
+        }
+      ],
+      "pronunciation": "poo-TEE"
+    },
+    {
+      "id": "pula_noun_1",
+      "tausug": "Pula",
+      "english": "red (color)",
+      "definition": "The color red itself.",
+      "examples": [
+        {
+          "tausug": "In pula simbolu sin paghigugma.",
+          "english": "Red is a symbol of love."
+        }
+      ],
+      "pronunciation": "poo-LA"
+    },
+    {
+      "id": "biyaning_noun_1",
+      "tausug": "Biyaning",
+      "english": "yellow (color)",
+      "definition": "The color yellow itself.",
+      "examples": [
+        {
+          "tausug": "Biyaning in kulay sin adlaw.",
+          "english": "Yellow is the color of the sun."
+        }
+      ],
+      "pronunciation": "bee-YAH-ning"
+    },
+    {
+      "id": "gaddung_noun_1",
+      "tausug": "Gaddung",
+      "english": "green (color)",
+      "definition": "The color green itself.",
+      "examples": [
+        {
+          "tausug": "Gaddung in kulay sin kabon.",
+          "english": "Green is the color of the forest."
+        }
+      ],
+      "pronunciation": "gad-DOONG"
+    },
+    {
+      "id": "bilo_noun_1",
+      "tausug": "Bilo",
+      "english": "blue (color)",
+      "definition": "The color blue itself.",
+      "examples": [
+        {
+          "tausug": "Bilo in kulay sin langit.",
+          "english": "Blue is the color of the sky."
+        }
+      ],
+      "pronunciation": "BEE-lo"
+    },
+    {
+      "id": "abuhun_noun_1",
+      "tausug": "Abuhun",
+      "english": "brown (color)",
+      "definition": "The color brown itself.",
+      "examples": [
+        {
+          "tausug": "Abuhun in kulay sin yuta'.",
+          "english": "Brown is the color of the soil."
+        }
+      ],
+      "pronunciation": "a-boo-HOON"
+    }
+  ]
+}
