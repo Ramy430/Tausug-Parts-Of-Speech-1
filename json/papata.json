@@ -114,21 +114,21 @@
       "antonyms": ["Diutay"]
     },
     {
-      "id": "diutay_1",
-      "tausug": "Diutay",
+      "id": "asibih_1",
+      "tausug": "Asibih",
       "english": "small, little",
       "definition": "Of a size that is less than normal or usual.",
       "examples": [
         {
-          "tausug": "Diutay in bata' pero matalino.",
+          "tausug": " Asibih in bata' sumagawah maingat.",
           "english": "The child is small but smart."
         },
         {
-          "tausug": "Diutay in kakaun.",
-          "english": "The food is little/small amount."
+          "tausug": "Asibih in bay namuh.",
+          "english": " Our house is small."
         }
       ],
-      "pronunciation": "dee-oo-TIE",
+      "pronunciation": "asi-bi'",
       "antonyms": ["Dakula"]
     },
     {
@@ -138,25 +138,25 @@
       "definition": "Measuring a great distance from end to end.",
       "examples": [
         {
-          "tausug": "Haba' in buhuk sin babai.",
-          "english": "The woman's hair is long."
+          "tausug": "in Haba' sin buhuk sin babai biya' hangka metro.",
+          "english": "The woman's hair length is like one meter."
         }
       ],
-      "pronunciation": "ha-BA",
-      "antonyms": ["Pipih"]
+      "pronunciation": "ha-BA'",
+      "antonyms": ["Hawpuh"]
     },
     {
-      "id": "pipih_1",
-      "tausug": "Pipih",
+      "id": "hawpuh_1",
+      "tausug": "Hawpuh",
       "english": "short",
       "definition": "Measuring a small distance from end to end.",
       "examples": [
         {
-          "tausug": "Pipih in buhuk sin lalaki.",
+          "tausug": "Hawpuh in buhuk sin usug.",
           "english": "The man's hair is short."
         }
       ],
-      "pronunciation": "pee-PEEH",
+      "pronunciation": "haw-PUH",
       "antonyms": ["Haba'"]
     },
 
@@ -168,7 +168,7 @@
       "definition": "To be desired or approved of; in a satisfactory condition.",
       "examples": [
         {
-          "tausug": "Marayaw lang aku, salamatt.",
+          "tausug": "Marayaw ra aku, salamatt.",
           "english": "I'm just fine, thank you."
         },
         {
@@ -176,21 +176,21 @@
           "english": "The food is good."
         }
       ],
-      "pronunciation": "ma-RIE-ow",
+      "pronunciation": "ma-Ra-yaw",
       "antonyms": ["Maraat"]
     },
     {
-      "id": "maraat_1",
-      "tausug": "Maraat",
+      "id": "mangih_1",
+      "tausug": "Mangih",
       "english": "bad, evil",
       "definition": "Of poor quality or low standard; morally wrong.",
       "examples": [
         {
-          "tausug": "Maraat in batasan niya.",
+          "tausug": "Mangih in humput niya.",
           "english": "His/her behavior is bad."
         }
       ],
-      "pronunciation": "ma-ra-AT",
+      "pronunciation": "ma-ngi'",
       "antonyms": ["Marayaw"]
     },
     {
@@ -200,7 +200,7 @@
       "definition": "Pleasing the senses or mind aesthetically.",
       "examples": [
         {
-          "tausug": "Malingkat in dagat ha sulod.",
+          "tausug": "Malingkat in dagat ha tuhgum suga.",
           "english": "The sea at sunset is beautiful."
         },
         {
@@ -209,20 +209,20 @@
         }
       ],
       "pronunciation": "ma-ling-KAT",
-      "synonyms": ["Maguapa"]
+      "synonyms": ["Pangit"]
     },
     {
-      "id": "maguapa_1",
-      "tausug": "Maguapa",
-      "english": "beautiful (for women)",
+      "id": "pangit_1",
+      "tausug": "Pangit",
+      "english": "ugly (for women)",
       "definition": "Specifically describes feminine beauty.",
       "examples": [
         {
-          "tausug": "Maguapa in nobya ku.",
-          "english": "My girlfriend is beautiful."
+          "tausug": "Pangit in kuting ku.",
+          "english": "My cat is ugly."
         }
       ],
-      "pronunciation": "ma-goo-AH-pa",
+      "pronunciation": "",
       "notes": "Often used specifically for women, while malingkat can be used more broadly."
     },
 
@@ -238,12 +238,12 @@
           "english": "There are many people at the festival."
         },
         {
-          "tausug": "Mataud isda nahuli.",
+          "tausug": "Mataud ista' nakawah.",
           "english": "Many fish were caught."
         }
       ],
       "pronunciation": "ma-TA-ood",
-      "antonyms": ["Diutay"]
+      "antonyms": ["Tiyuhtiyuh"]
     },
 
     /* ========== PRICE ADJECTIVES ========== */
