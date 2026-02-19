@@ -1,1 +1,154 @@
+{
+  "vocabulary": [
+    /* ========== PERSONAL PRONOUNS ========== */
+    {
+      "id": "aku_1",
+      "tausug": "Aku",
+      "english": "I, me",
+      "definition": "First person singular pronoun; refers to the speaker.",
+      "examples": [
+        {
+          "tausug": "Aku in magluto sin pagkaun.",
+          "english": "I am the one who will cook the food."
+        },
+        {
+          "tausug": "Biyayaan nila aku sin regalu.",
+          "english": "They gave me a gift."
+        }
+      ],
+      "pronunciation": "A-koo",
+      "notes": "Subject form is 'aku', object form can be 'kanaku'."
+    },
+    {
+      "id": "kaw_1",
+      "tausug": "Kaw",
+      "english": "you (singular)",
+      "definition": "Second person singular pronoun; refers to the person being addressed.",
+      "examples": [
+        {
+          "tausug": "Kumusta na kaw?",
+          "english": "How are you?"
+        }
+      ],
+      "pronunciation": "KA-ow"
+    },
+    {
+      "id": "kita_2",
+      "tausug": "Kita",
+      "english": "we (inclusive)",
+      "definition": "First person plural inclusive pronoun; includes both speaker and listener.",
+      "examples": [
+        {
+          "tausug": "Kita madtu ha bay ni Inda.",
+          "english": "We (you and I) will go to Inda's house."
+        }
+      ],
+      "pronunciation": "KEE-ta",
+      "notes": "Different from verb 'kita' (to see). Inclusive 'we' includes listener."
+    },
+    {
+      "id": "kami_1",
+      "tausug": "Kami",
+      "english": "we (exclusive)",
+      "definition": "First person plural exclusive pronoun; includes speaker but excludes listener.",
+      "examples": [
+        {
+          "tausug": "Kami madtu ha iskul, ikaw ha bay.",
+          "english": "We (my group) will go to school, you stay at home."
+        }
+      ],
+      "pronunciation": "KA-mee",
+      "notes": "Exclusive 'we' does not include the person being spoken to."
+    },
+    {
+      "id": "siya_1",
+      "tausug": "Siya",
+      "english": "he, she",
+      "definition": "Third person singular pronoun; refers to someone other than speaker or listener.",
+      "examples": [
+        {
+          "tausug": "Siya in nagbasa sin surat.",
+          "english": "He/She was the one who read the letter."
+        }
+      ],
+      "pronunciation": "SEE-ya",
+      "notes": "Gender-neutral in Tausug; context determines if male or female."
+    },
+    {
+      "id": "sila_1",
+      "tausug": "Sila",
+      "english": "they",
+      "definition": "Third person plural pronoun; refers to a group of people not including speaker or listener.",
+      "examples": [
+        {
+          "tausug": "Sila in manga nagdula ha guwa.",
+          "english": "They are the ones playing outside."
+        }
+      ],
+      "pronunciation": "SEE-la"
+    },
 
+    /* ========== DEMONSTRATIVE PRONOUNS ========== */
+    {
+      "id": "ini_1",
+      "tausug": "Ini",
+      "english": "this",
+      "definition": "Demonstrative pronoun referring to something near the speaker.",
+      "examples": [
+        {
+          "tausug": "Ini in bay ku.",
+          "english": "This is my house."
+        }
+      ],
+      "pronunciation": "EE-nee"
+    },
+    {
+      "id": "iyan_1",
+      "tausug": "Iyan",
+      "english": "that",
+      "definition": "Demonstrative pronoun referring to something away from the speaker.",
+      "examples": [
+        {
+          "tausug": "Iyan in bay nila.",
+          "english": "That is their house."
+        }
+      ],
+      "pronunciation": "ee-YAN"
+    },
+
+    /* ========== POSSESSIVE PRONOUNS ========== */
+    {
+      "id": "iya_1",
+      "tausug": "Iya",
+      "english": "his, her, its",
+      "definition": "Third person singular possessive pronoun.",
+      "examples": [
+        {
+          "tausug": "Ini in libru iya.",
+          "english": "This is his/her book."
+        }
+      ],
+      "pronunciation": "EE-ya"
+    },
+
+    /* ========== PRONOUN SUMMARY TABLE ========== */
+    {
+      "id": "pronoun_summary",
+      "tausug": "Ganti'ngan",
+      "english": "Pronoun Summary",
+      "definition": "Tausug pronouns change based on person, number, and inclusivity.",
+      "examples": [
+        {
+          "tausug": "Aku, kaw, siya",
+          "english": "I, you, he/she (singular)"
+        },
+        {
+          "tausug": "Kita, kami, kaw, sila",
+          "english": "we (inclusive), we (exclusive), you (plural), they"
+        }
+      ],
+      "pronunciation": "gan-tee-NGAN",
+      "notes": "Kita = you + me, Kami = me + others (not you). This distinction is important in Tausug culture."
+    }
+  ]
+}
