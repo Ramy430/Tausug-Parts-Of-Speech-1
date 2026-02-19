@@ -1,1 +1,288 @@
+{
+  "vocabulary": [
+    /* ========== INTRODUCTION TO ARTICLES IN TAUSUG ========== */
+    {
+      "id": "hurop_intro_1",
+      "tausug": "Hurop ha Tausug",
+      "english": "Articles in Tausug",
+      "definition": "Unlike English, Tausug does not have direct equivalents to definite (the) and indefinite (a, an) articles. Definiteness is expressed through context, word order, and demonstrative pronouns.",
+      "examples": [
+        {
+          "tausug": "Bay",
+          "english": "a house / the house (context determines meaning)"
+        },
+        {
+          "tausug": "Bata'",
+          "english": "a child / the child (context determines meaning)"
+        },
+        {
+          "tausug": "Tau",
+          "english": "a person / the person (context determines meaning)"
+        }
+      ],
+      "pronunciation": "hoo-ROP ha ta-OO-soog",
+      "notes": "In Tausug, you must rely on context to know if a noun is specific or general."
+    },
 
+    /* ========== DEFINITE MARKERS ========== */
+    {
+      "id": "in_1",
+      "tausug": "In",
+      "english": "the (marker)",
+      "definition": "A particle that marks the subject or topic of a sentence, often indicating definiteness.",
+      "examples": [
+        {
+          "tausug": "In bata' nagdula.",
+          "english": "The child is playing. (specific child)"
+        },
+        {
+          "tausug": "In bay ku dakula.",
+          "english": "My house is big. (specific house)"
+        },
+        {
+          "tausug": "In tau ha Sulu marayaw.",
+          "english": "The people in Sulu are good. (specific group)"
+        }
+      ],
+      "pronunciation": "in",
+      "notes": "Often functions similarly to a definite article, marking the noun as the topic."
+    },
+    {
+      "id": "sin_2",
+      "tausug": "Sin",
+      "english": "of the, from the",
+      "definition": "A marker indicating possession, origin, or association, often implying definiteness.",
+      "examples": [
+        {
+          "tausug": "Libru sin bata'.",
+          "english": "The child's book. (book of the child)"
+        },
+        {
+          "tausug": "Bay sin maestra.",
+          "english": "The teacher's house. (house of the teacher)"
+        }
+      ],
+      "pronunciation": "sin",
+      "notes": "Different from preposition 'sin' but related in function."
+    },
+
+    /* ========== DEMONSTRATIVES AS ARTICLE SUBSTITUTES ========== */
+    {
+      "id": "ini_article_1",
+      "tausug": "Ini",
+      "english": "this (specific)",
+      "definition": "Demonstrative that specifies a noun near the speaker, functioning like a definite article.",
+      "examples": [
+        {
+          "tausug": "Ini bay",
+          "english": "This house (the house right here)"
+        },
+        {
+          "tausug": "Ini libro",
+          "english": "This book (the specific book here)"
+        },
+        {
+          "tausug": "Ini tau",
+          "english": "This person (the specific person here)"
+        }
+      ],
+      "pronunciation": "EE-nee",
+      "notes": "Used when the speaker wants to be very specific about which noun is meant."
+    },
+    {
+      "id": "iyan_article_1",
+      "tausug": "Iyan",
+      "english": "that (specific)",
+      "definition": "Demonstrative that specifies a noun away from the speaker, functioning like a definite article.",
+      "examples": [
+        {
+          "tausug": "Iyan bay",
+          "english": "That house (the specific house there)"
+        },
+        {
+          "tausug": "Iyan libro",
+          "english": "That book (the specific book there)"
+        },
+        {
+          "tausug": "Iyan tau",
+          "english": "That person (the specific person there)"
+        }
+      ],
+      "pronunciation": "ee-YAN"
+    },
+    {
+      "id": "itu_1",
+      "tausug": "Itu",
+      "english": "that (over there)",
+      "definition": "Demonstrative for something farther away, specifying a distant noun.",
+      "examples": [
+        {
+          "tausug": "Itu bay ha bukid.",
+          "english": "That house over there on the mountain."
+        }
+      ],
+      "pronunciation": "ee-TOO"
+    },
+
+    /* ========== INDEFINITENESS MARKERS ========== */
+    {
+      "id": "may_1",
+      "tausug": "May",
+      "english": "a, an, some (indefinite)",
+      "definition": "Indicates existence or presence, often introducing an indefinite noun.",
+      "examples": [
+        {
+          "tausug": "May buku' aku.",
+          "english": "I have a book. (some book, not specific)"
+        },
+        {
+          "tausug": "May tau ha bay.",
+          "english": "There is a person at the house."
+        },
+        {
+          "tausug": "May kakaun pa?",
+          "english": "Is there any food? (some food)"
+        }
+      ],
+      "pronunciation": "my",
+      "notes": "Functions like an indefinite article when introducing new information."
+    },
+    {
+      "id": "way_1",
+      "tausug": "Way",
+      "english": "no, none (negative indefinite)",
+      "definition": "Indicates absence or non-existence of a noun.",
+      "examples": [
+        {
+          "tausug": "Way tau ha bay.",
+          "english": "There is no one at the house. (no person)"
+        },
+        {
+          "tausug": "Way kakaun.",
+          "english": "There is no food."
+        }
+      ],
+      "pronunciation": "wie",
+      "notes": "Negative counterpart of 'may'."
+    },
+    {
+      "id": "bang_article_1",
+      "tausug": "Bang",
+      "english": "a certain, some (indefinite)",
+      "definition": "Indicates an unspecified but particular noun.",
+      "examples": [
+        {
+          "tausug": "Bang adlaw",
+          "english": "One day / a certain day"
+        },
+        {
+          "tausug": "Bang tau nagsabing...",
+          "english": "A certain person said..."
+        }
+      ],
+      "pronunciation": "bang",
+      "notes": "Used for indefinite but specific references."
+    },
+
+    /* ========== NUMERALS AS INDEFINITE ARTICLES ========== */
+    {
+      "id": "isa_article_1",
+      "tausug": "Isa",
+      "english": "a, an, one",
+      "definition": "The number one, often used like an indefinite article for singular nouns.",
+      "examples": [
+        {
+          "tausug": "Isa ka tau",
+          "english": "A person / One person"
+        },
+        {
+          "tausug": "Isa ka bata'",
+          "english": "A child / One child"
+        },
+        {
+          "tausug": "Isa ka libro",
+          "english": "A book / One book"
+        }
+      ],
+      "pronunciation": "ee-SA",
+      "notes": "Often followed by 'ka' (a linker) before the noun."
+    },
+    {
+      "id": "manga_1",
+      "tausug": "Manga",
+      "english": "plural marker (some, -s)",
+      "definition": "Marks plural nouns, often functioning like an indefinite plural article.",
+      "examples": [
+        {
+          "tausug": "Manga bata'",
+          "english": "Children / some children"
+        },
+        {
+          "tausug": "Manga tau",
+          "english": "People / some people"
+        },
+        {
+          "tausug": "Manga libro",
+          "english": "Books / some books"
+        }
+      ],
+      "pronunciation": "ma-NGA",
+      "notes": "Equivalent to adding '-s' in English or using 'some' for plural indefinites."
+    },
+
+    /* ========== CONTEXTUAL DEFINITENESS EXAMPLES ========== */
+    {
+      "id": "context_examples_1",
+      "tausug": "Contextual Definiteness",
+      "english": "How context determines definiteness",
+      "definition": "In Tausug, whether a noun is definite or indefinite is understood from the conversation context without using separate words.",
+      "examples": [
+        {
+          "tausug": "May buku' aku. In buku' ku bago.",
+          "english": "I have a book. The book (that I just mentioned) is new."
+        },
+        {
+          "tausug": "Nakakita aku tau. In tau nagdagan.",
+          "english": "I saw a person. The person (that I saw) ran."
+        },
+        {
+          "tausug": "Mangan kita. In kakaun masarap.",
+          "english": "Let's eat. The food (we're eating) is delicious."
+        }
+      ],
+      "notes": "Once a noun is introduced with 'may' (a/some), subsequent references use 'in' (the) to show definiteness."
+    },
+
+    /* ========== ARTICLE SUMMARY ========== */
+    {
+      "id": "hurop_summary_1",
+      "tausug": "Hurop (Articles) Summary",
+      "english": "Summary of Tausug Article System",
+      "definition": "Tausug expresses article-like meanings through various strategies: context, markers, demonstratives, and numerals.",
+      "examples": [
+        {
+          "tausug": "Context: Bay = a/the house",
+          "english": "Context determines definiteness"
+        },
+        {
+          "tausug": "Definite: In bay = the house",
+          "english": "'In' marks definite topic"
+        },
+        {
+          "tausug": "Indefinite: May bay = a/some house",
+          "english": "'May' introduces indefinite noun"
+        },
+        {
+          "tausug": "Specific: Ini bay = this house",
+          "english": "Demonstrative specifies noun"
+        },
+        {
+          "tausug": "Plural: Manga bay = houses",
+          "english": "'Manga' marks plural"
+        }
+      ],
+      "pronunciation": "hoo-ROP",
+      "notes": "Unlike English, Tausug does not have separate words for 'a' and 'the'. Instead, it uses a combination of context, particles, and word order to convey definiteness."
+    }
+  ]
+}
