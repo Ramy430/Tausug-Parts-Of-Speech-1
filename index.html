@@ -28,6 +28,14 @@
             border-color: #2f855a;
         }
         
+        /* Single display space for dictionary */
+        #dictionaryContainer {
+            background: var(--background-white);
+            border-radius: var(--border-radius);
+            padding: 20px;
+            box-shadow: var(--shadow-md);
+        }
+        
         .search-box {
             width: 100%;
             padding: 15px;
@@ -85,69 +93,6 @@
             gap: 15px;
         }
         
-        .view-controls {
-            display: flex;
-            gap: 10px;
-        }
-        
-        .view-btn {
-            padding: 8px;
-            border: 1px solid var(--border-color);
-            background: white;
-            border-radius: 4px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-        
-        .view-btn:hover {
-            background: var(--primary-color);
-            color: white;
-        }
-        
-        .view-btn.active {
-            background: var(--primary-color);
-            color: white;
-        }
-        
-        .dictionary-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 20px;
-        }
-        
-        .dictionary-list {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
-        
-        .dictionary-list .word-card {
-            display: grid;
-            grid-template-columns: 200px 1fr auto;
-            align-items: center;
-            gap: 20px;
-        }
-        
-        .dictionary-list .word-header {
-            border-bottom: none;
-            margin-bottom: 0;
-            padding-bottom: 0;
-        }
-        
-        .dictionary-list .examples,
-        .dictionary-list .notes,
-        .dictionary-list .synonyms,
-        .dictionary-list .antonyms {
-            display: none;
-        }
-        
-        @media (max-width: 768px) {
-            .dictionary-list .word-card {
-                grid-template-columns: 1fr;
-                gap: 10px;
-            }
-        }
-        
         .part-badge {
             display: inline-block;
             padding: 4px 8px;
@@ -158,21 +103,43 @@
             margin-left: 10px;
         }
         
-        .export-btn {
-            background: var(--primary-color);
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            border-radius: var(--border-radius);
-            cursor: pointer;
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            transition: all 0.3s ease;
+        /* Results container - SINGLE DISPLAY SPACE */
+        #resultsContainer {
+            min-height: 400px;
         }
         
-        .export-btn:hover {
-            background: var(--primary-dark);
+        .results-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        
+        .no-results {
+            text-align: center;
+            padding: 60px 20px;
+            color: var(--text-medium);
+        }
+        
+        .no-results i {
+            font-size: 4rem;
+            color: var(--text-light);
+            margin-bottom: 20px;
+        }
+        
+        .loading {
+            text-align: center;
+            padding: 60px 20px;
+            color: var(--primary-color);
+        }
+        
+        .loading i {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        
+        /* Hide initial content when dictionary is open */
+        .content-area.hidden {
+            display: none;
         }
     </style>
 </head>
@@ -222,28 +189,29 @@
             </a>
         </div>
         
+        <!-- Initial welcome content -->
+        <div class="content-area" id="initialContent">
+            <div class="initial-content">
+                <i class="fas fa-language"></i>
+                <h2>Tausug Language Grammar</h2>
+                <p>Welcome to this interactive guide to Tausug parts of speech. The Tausug language is an Austronesian language spoken by the Tausūg people in the Philippines, Malaysia, and Indonesia.</p>
+                <p>Click on any of the buttons above to open a detailed page for that part of speech in a new tab, or use the Dictionary button below to search all words.</p>
+            </div>
+        </div>
+        
+        <!-- Dictionary section -->
         <div class="dictionary-section">
             <button class="speech-btn dictionary-btn" id="dictionaryBtn">
                 <i class="btn-icon fas fa-book-open"></i>
                 Open Dictionary (All Words)
             </button>
             
+            <!-- Single display space for dictionary -->
             <div id="dictionaryContainer" style="display: none;">
                 <div class="dictionary-stats">
                     <div>
                         <strong id="totalEntries">0</strong> entries found
                         <span id="filteredCount" style="display: none;">, showing <span id="currentCount">0</span></span>
-                    </div>
-                    <div class="view-controls">
-                        <button class="view-btn active" onclick="setView('grid')" title="Grid View">
-                            <i class="fas fa-th-large"></i>
-                        </button>
-                        <button class="view-btn" onclick="setView('list')" title="List View">
-                            <i class="fas fa-list"></i>
-                        </button>
-                        <button class="export-btn" onclick="exportDictionary()" title="Export as JSON">
-                            <i class="fas fa-download"></i> Export
-                        </button>
                     </div>
                 </div>
                 
@@ -262,8 +230,9 @@
                     <button class="filter-btn" data-part="hurop">Articles</button>
                 </div>
                 
-                <div id="dictionaryContent" class="dictionary-grid">
-                    <!-- Dictionary entries will be loaded here -->
+                <!-- SINGLE RESULTS CONTAINER -->
+                <div id="resultsContainer">
+                    <!-- Results will appear here -->
                 </div>
             </div>
         </div>
@@ -277,7 +246,8 @@
         // Dictionary functionality
         const dictionaryBtn = document.getElementById('dictionaryBtn');
         const dictionaryContainer = document.getElementById('dictionaryContainer');
-        const dictionaryContent = document.getElementById('dictionaryContent');
+        const initialContent = document.getElementById('initialContent');
+        const resultsContainer = document.getElementById('resultsContainer');
         const searchInput = document.getElementById('searchInput');
         const totalEntriesSpan = document.getElementById('totalEntries');
         const filteredCountSpan = document.getElementById('filteredCount');
@@ -285,7 +255,6 @@
         
         let allEntries = [];
         let currentFilter = 'all';
-        let currentView = 'grid';
         let currentSearch = '';
         
         // Part mapping for display
@@ -316,12 +285,17 @@
         
         dictionaryBtn.addEventListener('click', function() {
             if (dictionaryContainer.style.display === 'none') {
+                // Hide initial content, show dictionary
+                initialContent.style.display = 'none';
                 dictionaryContainer.style.display = 'block';
                 dictionaryBtn.innerHTML = '<i class="btn-icon fas fa-book-open"></i> Close Dictionary';
                 loadAllEntries();
             } else {
+                // Show initial content, hide dictionary
+                initialContent.style.display = 'block';
                 dictionaryContainer.style.display = 'none';
                 dictionaryBtn.innerHTML = '<i class="btn-icon fas fa-book-open"></i> Open Dictionary (All Words)';
+                resultsContainer.innerHTML = ''; // Clear results
             }
         });
         
@@ -339,17 +313,8 @@
             });
         });
         
-        function setView(view) {
-            currentView = view;
-            document.querySelectorAll('.view-btn').forEach(btn => btn.classList.remove('active'));
-            document.querySelector(`.view-btn[onclick="setView('${view}')"]`).classList.add('active');
-            
-            const container = document.getElementById('dictionaryContent');
-            container.className = view === 'grid' ? 'dictionary-grid' : 'dictionary-list';
-        }
-        
         async function loadAllEntries() {
-            dictionaryContent.innerHTML = '<div class="loading"><i class="fas fa-spinner fa-spin"></i><p>Loading dictionary...</p></div>';
+            resultsContainer.innerHTML = '<div class="loading"><i class="fas fa-spinner fa-spin"></i><p>Loading dictionary...</p></div>';
             
             allEntries = [];
             
@@ -404,8 +369,8 @@
         
         function displayEntries(entries) {
             if (entries.length === 0) {
-                dictionaryContent.innerHTML = `
-                    <div class="placeholder-content" style="grid-column: 1/-1;">
+                resultsContainer.innerHTML = `
+                    <div class="no-results">
                         <i class="fas fa-search"></i>
                         <h3>No entries found</h3>
                         <p>Try adjusting your search or filter.</p>
@@ -414,7 +379,7 @@
                 return;
             }
             
-            let html = '';
+            let html = '<div class="results-grid">';
             entries.forEach(entry => {
                 html += `
                 <div class="word-card">
@@ -432,15 +397,16 @@
                 </div>
                 `;
             });
+            html += '</div>';
             
-            dictionaryContent.innerHTML = html;
+            resultsContainer.innerHTML = html;
         }
         
         function generateExamplesHTML(examples) {
             if (!examples || examples.length === 0) return '';
             
             let html = '<div class="examples"><h4>Examples:</h4><ul>';
-            examples.slice(0, 2).forEach(ex => {  // Show only first 2 examples in dictionary
+            examples.slice(0, 2).forEach(ex => {
                 html += `
                     <li>
                         <p class="example-tausug">${ex.tausug}</p>
@@ -453,18 +419,6 @@
             }
             html += '</ul></div>';
             return html;
-        }
-        
-        function exportDictionary() {
-            const dataStr = JSON.stringify(allEntries, null, 2);
-            const dataUri = 'data:application/json;charset=utf-8,'+ encodeURIComponent(dataStr);
-            
-            const exportFileDefaultName = `tausug-dictionary-${new Date().toISOString().slice(0,10)}.json`;
-            
-            const linkElement = document.createElement('a');
-            linkElement.setAttribute('href', dataUri);
-            linkElement.setAttribute('download', exportFileDefaultName);
-            linkElement.click();
         }
     </script>
 </body>
