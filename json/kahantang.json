@@ -1,1 +1,373 @@
+{
+  "vocabulary": [
+    /* ========== ADVERBS OF AFFIRMATION & NEGATION ========== */
+    {
+      "id": "Huun_1",
+      "tausug": "Huun",
+      "english": "yes",
+      "definition": "Used to give an affirmative response.",
+      "examples": [
+        {
+          "tausug": "Huun, aku in nagbassa.",
+          "english": "Yes, I was the one who read."
+        },
+        {
+          "tausug": "Iyo, madtu aku kunsum.",
+          "english": "Yes, I will go tomorrow."
+        }
+      ],
+      "pronunciation": "EE-yo",
+      "synonyms": ["Hoo-un"]
+    },
+    {
+      "id": "huun_1",
+      "tausug": "Huun",
+      "english": "yes",
+      "definition": "An affirmative response (alternative to iyo).",
+      "examples": [
+        {
+          "tausug": "Huun, aku in nagtagad.",
+          "english": "Yes, I was the one waiting."
+        }
+      ],
+      "pronunciation": "hoo-UN",
+      "synonyms": ["Iyo"]
+    },
+    {
+      "id": "bukun_1",
+      "tausug": "Bukun'",
+      "english": "no, not",
+      "definition": "Used to express negation, denial, or refusal.",
+      "examples": [
+        {
+          "tausug": "Bukun aku in tao mabaya' kaymo.",
+          "english": " I amo not the person who likes you."
+        },
+        {
+          "tausug": "Bukun' siya in tao magkaun manuk.",
+          "english": "He/She is not the person eating a chicken."
+        }
+      ],
+      "pronunciation": "bu-kun",
+      
+    },
+     {
+      "id": "dih'_1",
+      "tausug": "Dih'",
+      "english": "no, not",
+      "definition": "Used to express negation, denial, or refusal.",
+      "examples": [
+        {
+          "tausug": "Dih aku mabaya' kaymo.",
+          "english": " I  do like you."
+        },
+        {
+          "tausug": "Dih ako magkaun manuk.",
+          "english": "I do not eat chicken."
+        }
+      ],
+      "pronunciation": "di'",
+      "notes": "Often used as 'di'' (with glottal stop) for negation."
+    },
+    {
+      "id": "wayruun_1",
+      "tausug": "Wayruun",
+      "english": "no, nothing (emphatic)",
+      "definition": "Strong negation; absolutely not.",
+      "examples": [
+        {
+          "tausug": "Wayruun kabayaan ko kaunun biyhayaun.",
+          "english": "Nothing I like to eat now."
+        }
+      ],
+      "pronunciation": "way-RU-UN",
+      
+    },
 
+    /* ========== ADVERBS OF MANNER ========== */
+    {
+      "id": "marayaw_2",
+      "tausug": "Marayaw",
+      "english": "well",
+      "definition": "In a good or satisfactory manner.",
+      "examples": [
+        {
+          "tausug": "Marayaw siya magtindug.",
+          "english": "He stands well."
+        },
+        {
+          "tausug": "Marayaw siya magbisaya.",
+          "english": "He speaks Visayan well."
+        }
+      ],
+      "pronunciation": "ma-RIE-ow"
+    },
+    {
+      "id": "mabiskay_1",
+      "tausug": "Mabiskay",
+      "english": "quickly, fast",
+      "definition": "At high speed; rapidly.",
+      "examples": [
+        {
+          "tausug": "Mabiskay siya nagdagan.",
+          "english": "He ran quickly."
+        },
+        {
+          "tausug": "Mabiskay siya magkaun.",
+          "english": "He eats quickly."
+        }
+      ],
+      "pronunciation": "ma-bis-KIE",
+      "antonyms": ["Mahinay"]
+    },
+    {
+      "id": "mahinay_1",
+      "tausug": "Mahinay",
+      "english": "slowly",
+      "definition": "At a slow speed; taking one's time.",
+      "examples": [
+        {
+          "tausug": "Mahinay siya maglakaw.",
+          "english": "He walks slowly."
+        }
+      ],
+      "pronunciation": "ma-hee-NIE",
+      "antonyms": ["Mabiskay"]
+    },
+    {
+      "id": "matinang_1",
+      "tausug": "Matinang",
+      "english": "carefully",
+      "definition": "With great attention and care.",
+      "examples": [
+        {
+          "tausug": "Matinang siya naghulat.",
+          "english": "He waited carefully/patiently."
+        }
+      ],
+      "pronunciation": "ma-tee-NANG"
+    },
+
+    /* ========== ADVERBS OF TIME ========== */
+    {
+      "id": "kuman_1",
+      "tausug": "Kuman",
+      "english": "now",
+      "definition": "At the present time or moment.",
+      "examples": [
+        {
+          "tausug": "Kuman kami mangi'.",
+          "english": "We are going now."
+        },
+        {
+          "tausug": "Kuman na kita kaun.",
+          "english": "Let's eat now."
+        }
+      ],
+      "pronunciation": "koo-MAN"
+    },
+    {
+      "id": "kagabi_1",
+      "tausug": "Kagabi'",
+      "english": "yesterday, last night",
+      "definition": "On the day before today; during the previous night.",
+      "examples": [
+        {
+          "tausug": "Kagabi' aku nakakita kanya.",
+          "english": "I saw him/her last night."
+        }
+      ],
+      "pronunciation": "ka-ga-BEE"
+    },
+    {
+      "id": "sunud_1",
+      "tausug": "Sunud",
+      "english": "tomorrow",
+      "definition": "On the day after today.",
+      "examples": [
+        {
+          "tausug": "Sunud aku madtu.",
+          "english": "I will go tomorrow."
+        }
+      ],
+      "pronunciation": "soo-NOOD"
+    },
+    {
+      "id": "kadal_i_1",
+      "tausug": "Kadal",
+      "english": "always, often",
+      "definition": "At all times; on every occasion.",
+      "examples": [
+        {
+          "tausug": "Kadal siya ha bay.",
+          "english": "He is always at home."
+        }
+      ],
+      "pronunciation": "ka-DAL"
+    },
+    {
+      "id": "kasusu_1",
+      "tausug": "Kasusu'",
+      "english": "often",
+      "definition": "Frequently; many times.",
+      "examples": [
+        {
+          "tausug": "Kasusu' aku makaan ha restaurant.",
+          "english": "I often eat at the restaurant."
+        }
+      ],
+      "pronunciation": "ka-soo-SOO"
+    },
+    {
+      "id": "ndan_1",
+      "tausug": "Ndan",
+      "english": "already, yet",
+      "definition": "Indicates completed action or change of state.",
+      "examples": [
+        {
+          "tausug": "Kaun ndan aku.",
+          "english": "I already ate."
+        }
+      ],
+      "pronunciation": "ndan",
+      "notes": "Often used as an enclitic."
+    },
+    {
+      "id": "pa_1",
+      "tausug": "Pa",
+      "english": "still, yet",
+      "definition": "Indicates ongoing action or state.",
+      "examples": [
+        {
+          "tausug": "Nagkaun pa aku.",
+          "english": "I am still eating."
+        }
+      ],
+      "pronunciation": "pa",
+      "notes": "Different from preposition 'pa' (to/towards)."
+    },
+
+    /* ========== ADVERBS OF PLACE ========== */
+    {
+      "id": "diyan_1",
+      "tausug": "Diyan",
+      "english": "here",
+      "definition": "In, at, or to this place or position.",
+      "examples": [
+        {
+          "tausug": "Diyan kaw maghulat.",
+          "english": "Wait here."
+        },
+        {
+          "tausug": "Diyan aku.",
+          "english": "I am here."
+        }
+      ],
+      "pronunciation": "dee-YAN"
+    },
+    {
+      "id": "iyahan_1",
+      "tausug": "Iyahan",
+      "english": "there",
+      "definition": "In, at, or to that place or position.",
+      "examples": [
+        {
+          "tausug": "Iyahan siya nagtindug.",
+          "english": "He is standing there."
+        },
+        {
+          "tausug": "Iyahan in bay namu.",
+          "english": "Our house is there."
+        }
+      ],
+      "pronunciation": "ee-ya-HAN"
+    },
+    {
+      "id": "ha_2",
+      "tausug": "Ha",
+      "english": "there (unspecific)",
+      "definition": "Indicates location in a general sense.",
+      "examples": [
+        {
+          "tausug": "Ha siya.",
+          "english": "He/She is there."
+        }
+      ],
+      "pronunciation": "ha",
+      "notes": "Different from preposition 'ha' (in/at/on)."
+    },
+
+    /* ========== ADVERBS OF DEGREE ========== */
+    {
+      "id": "labi_1",
+      "tausug": "Labi",
+      "english": "very, more",
+      "definition": "To a high degree; extremely.",
+      "examples": [
+        {
+          "tausug": "Labi siya katingkug.",
+          "english": "He is very tall."
+        },
+        {
+          "tausug": "Labi marayaw.",
+          "english": "Very good."
+        }
+      ],
+      "pronunciation": "la-BEE"
+    },
+    {
+      "id": "samtang_1",
+      "tausug": "Samtang",
+      "english": "a little, somewhat",
+      "definition": "To a small degree; slightly.",
+      "examples": [
+        {
+          "tausug": "Samtang malamig.",
+          "english": "A little cold."
+        }
+      ],
+      "pronunciation": "sam-TANG"
+    },
+
+    /* ========== INTERROGATIVE ADVERBS ========== */
+    {
+      "id": "nakura_1",
+      "tausug": "Nakura'",
+      "english": "why",
+      "definition": "For what reason or purpose.",
+      "examples": [
+        {
+          "tausug": "Nakura' kaw diri madtu?",
+          "english": "Why won't you go?"
+        }
+      ],
+      "pronunciation": "na-koo-RA"
+    },
+    {
+      "id": "kuhnu_1",
+      "tausug": "Kuhnu",
+      "english": "when",
+      "definition": "At what time.",
+      "examples": [
+        {
+          "tausug": "Kahnu kaw madtu?",
+          "english": "When will you go?"
+        }
+      ],
+      "pronunciation": "ku'-noo"
+    },
+    {
+      "id": "kahnu_1",
+      "tausug": "Kahnu",
+      "english": "when",
+      "definition": " At what time in the past.",
+      "examples": [
+        {
+          "tausug": "Hahnu kaw nakadtu?",
+          "english": "When did you get there?"
+        }
+      ],
+      "pronunciation": "ka'-noo"
+    }
+  ]
+}
