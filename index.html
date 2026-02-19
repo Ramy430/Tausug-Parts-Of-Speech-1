@@ -6,6 +6,175 @@
     <title>Tausug Parts of Speech</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional styles for dictionary */
+        .dictionary-section {
+            margin-top: 40px;
+            border-top: 2px solid var(--border-color);
+            padding-top: 30px;
+        }
+        
+        .dictionary-btn {
+            background: var(--secondary-color);
+            border-color: var(--secondary-color);
+            color: white;
+            font-size: 1.2rem;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .dictionary-btn:hover {
+            background: #2f855a;
+            border-color: #2f855a;
+        }
+        
+        .search-box {
+            width: 100%;
+            padding: 15px;
+            font-size: 1.1rem;
+            border: 2px solid var(--border-color);
+            border-radius: var(--border-radius);
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+        }
+        
+        .search-box:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(44, 82, 130, 0.1);
+        }
+        
+        .filter-buttons {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+        
+        .filter-btn {
+            padding: 8px 16px;
+            border: 1px solid var(--border-color);
+            background: white;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 0.9rem;
+        }
+        
+        .filter-btn:hover {
+            background: var(--primary-color);
+            color: white;
+            border-color: var(--primary-color);
+        }
+        
+        .filter-btn.active {
+            background: var(--primary-color);
+            color: white;
+            border-color: var(--primary-color);
+        }
+        
+        .dictionary-stats {
+            background: var(--background-light);
+            padding: 15px;
+            border-radius: var(--border-radius);
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        
+        .view-controls {
+            display: flex;
+            gap: 10px;
+        }
+        
+        .view-btn {
+            padding: 8px;
+            border: 1px solid var(--border-color);
+            background: white;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .view-btn:hover {
+            background: var(--primary-color);
+            color: white;
+        }
+        
+        .view-btn.active {
+            background: var(--primary-color);
+            color: white;
+        }
+        
+        .dictionary-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        
+        .dictionary-list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .dictionary-list .word-card {
+            display: grid;
+            grid-template-columns: 200px 1fr auto;
+            align-items: center;
+            gap: 20px;
+        }
+        
+        .dictionary-list .word-header {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        
+        .dictionary-list .examples,
+        .dictionary-list .notes,
+        .dictionary-list .synonyms,
+        .dictionary-list .antonyms {
+            display: none;
+        }
+        
+        @media (max-width: 768px) {
+            .dictionary-list .word-card {
+                grid-template-columns: 1fr;
+                gap: 10px;
+            }
+        }
+        
+        .part-badge {
+            display: inline-block;
+            padding: 4px 8px;
+            background: var(--primary-light);
+            color: white;
+            border-radius: 12px;
+            font-size: 0.8rem;
+            margin-left: 10px;
+        }
+        
+        .export-btn {
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: var(--border-radius);
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.3s ease;
+        }
+        
+        .export-btn:hover {
+            background: var(--primary-dark);
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -15,50 +184,87 @@
         </header>
         
         <div class="buttons-container">
-            <button class="speech-btn" data-part="ngan">
+            <a href="parts/ngan.html" class="speech-btn" target="_blank">
                 <i class="btn-icon fas fa-file-signature"></i>
                 Ngan (Noun)
-            </button>
-            <button class="speech-btn" data-part="ganti">
+            </a>
+            <a href="parts/ganti.html" class="speech-btn" target="_blank">
                 <i class="btn-icon fas fa-user"></i>
                 Ganti'ngan (Pronoun)
-            </button>
-            <button class="speech-btn" data-part="piil">
+            </a>
+            <a href="parts/piil.html" class="speech-btn" target="_blank">
                 <i class="btn-icon fas fa-running"></i>
                 Pi'il (Verb)
-            </button>
-            <button class="speech-btn" data-part="papata">
+            </a>
+            <a href="parts/papata.html" class="speech-btn" target="_blank">
                 <i class="btn-icon fas fa-pen-alt"></i>
                 Papata (Adjective)
-            </button>
-            <button class="speech-btn" data-part="kahantang">
+            </a>
+            <a href="parts/kahantang.html" class="speech-btn" target="_blank">
                 <i class="btn-icon fas fa-clock"></i>
                 Kahantang (Adverb)
-            </button>
-            <button class="speech-btn" data-part="parbutangan">
+            </a>
+            <a href="parts/parbutangan.html" class="speech-btn" target="_blank">
                 <i class="btn-icon fas fa-map-marker-alt"></i>
                 Parbutangan (Preposition)
-            </button>
-            <button class="speech-btn" data-part="panglangkum">
+            </a>
+            <a href="parts/panglangkum.html" class="speech-btn" target="_blank">
                 <i class="btn-icon fas fa-link"></i>
                 Panglangkum (Conjunction)
-            </button>
-            <button class="speech-btn" data-part="pangtarsanggang">
+            </a>
+            <a href="parts/pangtarsanggang.html" class="speech-btn" target="_blank">
                 <i class="btn-icon fas fa-exclamation-circle"></i>
                 Pangtarsanggang (Interjection)
-            </button>
-            <button class="speech-btn" data-part="hurop">
+            </a>
+            <a href="parts/hurop.html" class="speech-btn" target="_blank">
                 <i class="btn-icon fas fa-hashtag"></i>
                 Hurop (Article)
-            </button>
+            </a>
         </div>
         
-        <div class="content-area" id="content-area">
-            <div class="initial-content">
-                <i class="fas fa-language"></i>
-                <h2>Tausug Language Grammar</h2>
-                <p>Welcome to this interactive guide to Tausug parts of speech. The Tausug language is an Austronesian language spoken by the Tausūg people in the Philippines, Malaysia, and Indonesia.</p>
-                <p>Click on any of the buttons above to learn about that specific part of speech, including its definition, examples, and usage in the Tausug language.</p>
+        <div class="dictionary-section">
+            <button class="speech-btn dictionary-btn" id="dictionaryBtn">
+                <i class="btn-icon fas fa-book-open"></i>
+                Open Dictionary (All Words)
+            </button>
+            
+            <div id="dictionaryContainer" style="display: none;">
+                <div class="dictionary-stats">
+                    <div>
+                        <strong id="totalEntries">0</strong> entries found
+                        <span id="filteredCount" style="display: none;">, showing <span id="currentCount">0</span></span>
+                    </div>
+                    <div class="view-controls">
+                        <button class="view-btn active" onclick="setView('grid')" title="Grid View">
+                            <i class="fas fa-th-large"></i>
+                        </button>
+                        <button class="view-btn" onclick="setView('list')" title="List View">
+                            <i class="fas fa-list"></i>
+                        </button>
+                        <button class="export-btn" onclick="exportDictionary()" title="Export as JSON">
+                            <i class="fas fa-download"></i> Export
+                        </button>
+                    </div>
+                </div>
+                
+                <input type="text" class="search-box" id="searchInput" placeholder="Search in Tausug or English...">
+                
+                <div class="filter-buttons" id="filterButtons">
+                    <button class="filter-btn active" data-part="all">All</button>
+                    <button class="filter-btn" data-part="ngan">Nouns</button>
+                    <button class="filter-btn" data-part="ganti">Pronouns</button>
+                    <button class="filter-btn" data-part="piil">Verbs</button>
+                    <button class="filter-btn" data-part="papata">Adjectives</button>
+                    <button class="filter-btn" data-part="kahantang">Adverbs</button>
+                    <button class="filter-btn" data-part="parbutangan">Prepositions</button>
+                    <button class="filter-btn" data-part="panglangkum">Conjunctions</button>
+                    <button class="filter-btn" data-part="pangtarsanggang">Interjections</button>
+                    <button class="filter-btn" data-part="hurop">Articles</button>
+                </div>
+                
+                <div id="dictionaryContent" class="dictionary-grid">
+                    <!-- Dictionary entries will be loaded here -->
+                </div>
             </div>
         </div>
         
@@ -67,6 +273,199 @@
         </footer>
     </div>
 
-    <script src="script.js"></script>
+    <script>
+        // Dictionary functionality
+        const dictionaryBtn = document.getElementById('dictionaryBtn');
+        const dictionaryContainer = document.getElementById('dictionaryContainer');
+        const dictionaryContent = document.getElementById('dictionaryContent');
+        const searchInput = document.getElementById('searchInput');
+        const totalEntriesSpan = document.getElementById('totalEntries');
+        const filteredCountSpan = document.getElementById('filteredCount');
+        const currentCountSpan = document.getElementById('currentCount');
+        
+        let allEntries = [];
+        let currentFilter = 'all';
+        let currentView = 'grid';
+        let currentSearch = '';
+        
+        // Part mapping for display
+        const partDisplay = {
+            'ngan': 'Noun',
+            'ganti': 'Pronoun',
+            'piil': 'Verb',
+            'papata': 'Adjective',
+            'kahantang': 'Adverb',
+            'parbutangan': 'Preposition',
+            'panglangkum': 'Conjunction',
+            'pangtarsanggang': 'Interjection',
+            'hurop': 'Article'
+        };
+        
+        // File mapping
+        const partToFile = {
+            'ngan': 'json/ngan.json',
+            'ganti': 'json/gantingan.json',
+            'piil': 'json/piil.json',
+            'papata': 'json/papata.json',
+            'kahantang': 'json/kahantang.json',
+            'parbutangan': 'json/parbutangan.json',
+            'panglangkum': 'json/panglangkum.json',
+            'pangtarsanggang': 'json/pangtarsanggang.json',
+            'hurop': 'json/hurop.json'
+        };
+        
+        dictionaryBtn.addEventListener('click', function() {
+            if (dictionaryContainer.style.display === 'none') {
+                dictionaryContainer.style.display = 'block';
+                dictionaryBtn.innerHTML = '<i class="btn-icon fas fa-book-open"></i> Close Dictionary';
+                loadAllEntries();
+            } else {
+                dictionaryContainer.style.display = 'none';
+                dictionaryBtn.innerHTML = '<i class="btn-icon fas fa-book-open"></i> Open Dictionary (All Words)';
+            }
+        });
+        
+        searchInput.addEventListener('input', function() {
+            currentSearch = this.value.toLowerCase();
+            filterAndDisplayEntries();
+        });
+        
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                currentFilter = this.dataset.part;
+                filterAndDisplayEntries();
+            });
+        });
+        
+        function setView(view) {
+            currentView = view;
+            document.querySelectorAll('.view-btn').forEach(btn => btn.classList.remove('active'));
+            document.querySelector(`.view-btn[onclick="setView('${view}')"]`).classList.add('active');
+            
+            const container = document.getElementById('dictionaryContent');
+            container.className = view === 'grid' ? 'dictionary-grid' : 'dictionary-list';
+        }
+        
+        async function loadAllEntries() {
+            dictionaryContent.innerHTML = '<div class="loading"><i class="fas fa-spinner fa-spin"></i><p>Loading dictionary...</p></div>';
+            
+            allEntries = [];
+            
+            for (const [part, file] of Object.entries(partToFile)) {
+                try {
+                    const response = await fetch(file);
+                    const data = await response.json();
+                    
+                    const entriesWithPart = (data.vocabulary || []).map(entry => ({
+                        ...entry,
+                        part: part,
+                        partDisplay: partDisplay[part]
+                    }));
+                    
+                    allEntries = [...allEntries, ...entriesWithPart];
+                } catch (error) {
+                    console.error(`Error loading ${file}:`, error);
+                }
+            }
+            
+            totalEntriesSpan.textContent = allEntries.length;
+            filterAndDisplayEntries();
+        }
+        
+        function filterAndDisplayEntries() {
+            let filtered = allEntries;
+            
+            // Apply part filter
+            if (currentFilter !== 'all') {
+                filtered = filtered.filter(entry => entry.part === currentFilter);
+            }
+            
+            // Apply search filter
+            if (currentSearch) {
+                filtered = filtered.filter(entry => 
+                    entry.tausug.toLowerCase().includes(currentSearch) ||
+                    entry.english.toLowerCase().includes(currentSearch) ||
+                    (entry.definition && entry.definition.toLowerCase().includes(currentSearch))
+                );
+            }
+            
+            // Update counts
+            currentCountSpan.textContent = filtered.length;
+            if (filtered.length < allEntries.length) {
+                filteredCountSpan.style.display = 'inline';
+            } else {
+                filteredCountSpan.style.display = 'none';
+            }
+            
+            displayEntries(filtered);
+        }
+        
+        function displayEntries(entries) {
+            if (entries.length === 0) {
+                dictionaryContent.innerHTML = `
+                    <div class="placeholder-content" style="grid-column: 1/-1;">
+                        <i class="fas fa-search"></i>
+                        <h3>No entries found</h3>
+                        <p>Try adjusting your search or filter.</p>
+                    </div>
+                `;
+                return;
+            }
+            
+            let html = '';
+            entries.forEach(entry => {
+                html += `
+                <div class="word-card">
+                    <div class="word-header">
+                        <h3 class="tausug-word">${entry.tausug}</h3>
+                        ${entry.pronunciation ? `<span class="pronunciation">${entry.pronunciation}</span>` : ''}
+                    </div>
+                    <p class="english-word">
+                        <em>${entry.english}</em>
+                        <span class="part-badge">${entry.partDisplay}</span>
+                    </p>
+                    ${entry.definition ? `<p class="definition">${entry.definition}</p>` : ''}
+                    ${entry.examples ? generateExamplesHTML(entry.examples) : ''}
+                    ${entry.notes ? `<div class="notes"><strong>Note:</strong> ${entry.notes}</div>` : ''}
+                </div>
+                `;
+            });
+            
+            dictionaryContent.innerHTML = html;
+        }
+        
+        function generateExamplesHTML(examples) {
+            if (!examples || examples.length === 0) return '';
+            
+            let html = '<div class="examples"><h4>Examples:</h4><ul>';
+            examples.slice(0, 2).forEach(ex => {  // Show only first 2 examples in dictionary
+                html += `
+                    <li>
+                        <p class="example-tausug">${ex.tausug}</p>
+                        <p class="example-english">${ex.english}</p>
+                    </li>
+                `;
+            });
+            if (examples.length > 2) {
+                html += `<li><em>+${examples.length - 2} more examples</em></li>`;
+            }
+            html += '</ul></div>';
+            return html;
+        }
+        
+        function exportDictionary() {
+            const dataStr = JSON.stringify(allEntries, null, 2);
+            const dataUri = 'data:application/json;charset=utf-8,'+ encodeURIComponent(dataStr);
+            
+            const exportFileDefaultName = `tausug-dictionary-${new Date().toISOString().slice(0,10)}.json`;
+            
+            const linkElement = document.createElement('a');
+            linkElement.setAttribute('href', dataUri);
+            linkElement.setAttribute('download', exportFileDefaultName);
+            linkElement.click();
+        }
+    </script>
 </body>
 </html>
