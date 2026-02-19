@@ -1,6 +1,5 @@
 {
   "vocabulary": [
-    /* ========== BODY PARTS (Nouns) ========== */
     {
       "id": "lima_1",
       "tausug": "Lima",
@@ -61,8 +60,6 @@
       "pronunciation": "A-loom",
       "notes": "Medical term for bruise or contusion."
     },
-
-    /* ========== COMMON NOUNS ========== */
     {
       "id": "bay_1",
       "tausug": "Bay",
@@ -258,8 +255,6 @@
       "pronunciation": "ja-LEE",
       "notes": "Military term; can also mean patterned clothing."
     },
-
-    /* ========== COLORS (as Nouns) ========== */
     {
       "id": "itum_noun_1",
       "tausug": "Itum",
