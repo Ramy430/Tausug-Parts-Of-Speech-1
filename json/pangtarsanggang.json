@@ -1,1 +1,378 @@
+{
+  "vocabulary": [
+    /* ========== GREETINGS & POLITE EXPRESSIONS ========== */
+    {
+      "id": "salamat_1",
+      "tausug": "Salamat",
+      "english": "thank you",
+      "definition": "An expression of gratitude or appreciation.",
+      "examples": [
+        {
+          "tausug": "Salamat sa pagtabang.",
+          "english": "Thank you for the help."
+        },
+        {
+          "tausug": "Salamat kaayo!",
+          "english": "Thank you very much!"
+        },
+        {
+          "tausug": "Salamat ha imu.",
+          "english": "Thank you to you."
+        }
+      ],
+      "pronunciation": "sa-la-MAT",
+      "response": "Walay sapayan"
+    },
+    {
+      "id": "ampun_1",
+      "tausug": "Ampun",
+      "english": "sorry, excuse me",
+      "definition": "Used to express apology or to get someone's attention politely.",
+      "examples": [
+        {
+          "tausug": "Ampun, diin in banyu?",
+          "english": "Excuse me, where is the bathroom?"
+        },
+        {
+          "tausug": "Ampun, da aku maksud.",
+          "english": "Sorry, I didn't mean it."
+        },
+        {
+          "tausug": "Ampun na lang.",
+          "english": "Please forgive me."
+        }
+      ],
+      "pronunciation": "am-POON"
+    },
+    {
+      "id": "sabap_1",
+      "tausug": "Sabap",
+      "english": "excuse me, pardon",
+      "definition": "Used to politely get attention or ask forgiveness.",
+      "examples": [
+        {
+          "tausug": "Sabap, makigagi aku.",
+          "english": "Excuse me, may I pass through?"
+        }
+      ],
+      "pronunciation": "sa-BAP"
+    },
 
+    /* ========== AFFIRMATIVE RESPONSES ========== */
+    {
+      "id": "huun_1",
+      "tausug": "Huun",
+      "english": "yes",
+      "definition": "An affirmative response.",
+      "examples": [
+        {
+          "tausug": "Huun, aku in naghulat.",
+          "english": "Yes, I was the one waiting."
+        },
+        {
+          "tausug": "Huun, tama ka.",
+          "english": "Yes, you are correct."
+        },
+        {
+          "tausug": "Huun, madtu aku.",
+          "english": "Yes, I will go."
+        }
+      ],
+      "pronunciation": "hoo-OON",
+      "synonyms": ["Iyo"]
+    },
+    {
+      "id": "iyo_2",
+      "tausug": "Iyo",
+      "english": "yes",
+      "definition": "Used to give an affirmative response.",
+      "examples": [
+        {
+          "tausug": "Iyo, aku in nagbassa.",
+          "english": "Yes, I was the one who read."
+        }
+      ],
+      "pronunciation": "EE-yo"
+    },
+    {
+      "id": "au_1",
+      "tausug": "Au",
+      "english": "yes, okay",
+      "definition": "Informal affirmative response.",
+      "examples": [
+        {
+          "tausug": "Au, madtu kita.",
+          "english": "Okay, let's go."
+        }
+      ],
+      "pronunciation": "a-OO",
+      "notes": "More casual than huun or iyo."
+    },
+
+    /* ========== NEGATIVE RESPONSES ========== */
+    {
+      "id": "da_2",
+      "tausug": "Da'",
+      "english": "no",
+      "definition": "Used to express negation, denial, or refusal.",
+      "examples": [
+        {
+          "tausug": "Da'! Ayaw!",
+          "english": "No! Don't!"
+        },
+        {
+          "tausug": "Da' aku mabaya'.",
+          "english": "No, I don't want to."
+        }
+      ],
+      "pronunciation": "da"
+    },
+    {
+      "id": "diri_2",
+      "tausug": "Diri",
+      "english": "no (emphatic)",
+      "definition": "Strong negation; absolutely not.",
+      "examples": [
+        {
+          "tausug": "Diri gaid!",
+          "english": "Absolutely not!"
+        }
+      ],
+      "pronunciation": "dee-REE"
+    },
+
+    /* ========== EXCLAMATIONS OF EMOTION ========== */
+    {
+      "id": "ay_1",
+      "tausug": "Ay",
+      "english": "oh, ah, ouch",
+      "definition": "Used to express surprise, pain, or disappointment.",
+      "examples": [
+        {
+          "tausug": "Ay! Nalimutan ku in yan ku.",
+          "english": "Oh! I forgot my key."
+        },
+        {
+          "tausug": "Ay, sakit!",
+          "english": "Ouch, it hurts!"
+        },
+        {
+          "tausug": "Ay, kabaskug!",
+          "english": "Oh, how strong!"
+        }
+      ],
+      "pronunciation": "AI"
+    },
+    {
+      "id": "uy_1",
+      "tausug": "Uy",
+      "english": "hey, oh",
+      "definition": "Used to call attention or express surprise.",
+      "examples": [
+        {
+          "tausug": "Uy! Kadayaw mu!",
+          "english": "Hey! Look at you!"
+        },
+        {
+          "tausug": "Uy, maka太阳 kita?",
+          "english": "Hey, can we go?"
+        }
+      ],
+      "pronunciation": "OOY"
+    },
+    {
+      "id": "aba_1",
+      "tausug": "Aba",
+      "english": "wow, oh my",
+      "definition": "Expression of surprise or admiration.",
+      "examples": [
+        {
+          "tausug": "Aba! Malingkat man!",
+          "english": "Wow! That's beautiful!"
+        },
+        {
+          "tausug": "Aba, dakula na!",
+          "english": "Wow, it's big now!"
+        }
+      ],
+      "pronunciation": "a-BA"
+    },
+    {
+      "id": "sus_1",
+      "tausug": "Sus",
+      "english": "wow, oh my (short for Hesus)",
+      "definition": "Expression of surprise, shock, or exasperation.",
+      "examples": [
+        {
+          "tausug": "Sus! Kadakula!",
+          "english": "Wow! So big!"
+        },
+        {
+          "tausug": "Sus, kalayu!",
+          "english": "Oh my, so far!"
+        }
+      ],
+      "pronunciation": "soos",
+      "notes": "Derived from 'Hesus' (Jesus), used as mild exclamation."
+    },
+    {
+      "id": "hay_1",
+      "tausug": "Hay",
+      "english": "sigh, alas",
+      "definition": "Expression of weariness, sadness, or relief.",
+      "examples": [
+        {
+          "tausug": "Hay, kapuy na.",
+          "english": "Sigh, I'm tired now."
+        },
+        {
+          "tausug": "Hay, salamat tapus na.",
+          "english": "Sigh, thank goodness it's done."
+        }
+      ],
+      "pronunciation": "HIGH"
+    },
+
+    /* ========== RELIGIOUS EXCLAMATIONS ========== */
+    {
+      "id": "astaghfirullah_1",
+      "tausug": "Astaghfirullah",
+      "english": "God forgive me",
+      "definition": "Islamic expression meaning 'I seek forgiveness from Allah'.",
+      "examples": [
+        {
+          "tausug": "Astaghfirullah! Subay kaw magsambahayang.",
+          "english": "God forgive me! You should pray."
+        },
+        {
+          "tausug": "Astaghfirullah, da ko maksud.",
+          "english": "God forgive me, I didn't mean it."
+        }
+      ],
+      "pronunciation": "as-tag-feer-oo-LAH",
+      "notes": "Arabic origin, commonly used by Muslim Tausugs when shocked or repentant."
+    },
+    {
+      "id": "mashallah_1",
+      "tausug": "Masha'Allah",
+      "english": "God has willed it",
+      "definition": "Islamic expression used to express appreciation, joy, or thankfulness.",
+      "examples": [
+        {
+          "tausug": "Masha'Allah! Malingkat in bata'.",
+          "english": "God has willed it! The child is beautiful."
+        },
+        {
+          "tausug": "Masha'Allah, marayaw in resulta.",
+          "english": "God has willed it, the result is good."
+        }
+      ],
+      "pronunciation": "mash-al-LAH",
+      "notes": "Arabic origin, used to praise something beautiful or commendable without envy."
+    },
+    {
+      "id": "alhamdulillah_1",
+      "tausug": "Alhamdulillah",
+      "english": "praise be to God",
+      "definition": "Islamic expression of gratitude and praise.",
+      "examples": [
+        {
+          "tausug": "Alhamdulillah, tapus na.",
+          "english": "Praise be to God, it's finished."
+        },
+        {
+          "tausug": "Alhamdulillah, marayaw na siya.",
+          "english": "Praise be to God, he/she is well now."
+        }
+      ],
+      "pronunciation": "al-ham-doo-LEE-lah",
+      "notes": "Used to express thankfulness to Allah."
+    },
+    {
+      "id": "inshallah_1",
+      "tausug": "Insha'Allah",
+      "english": "God willing",
+      "definition": "Islamic expression indicating future hope dependent on divine will.",
+      "examples": [
+        {
+          "tausug": "Insha'Allah, madtu kami sunud.",
+          "english": "God willing, we will go tomorrow."
+        }
+      ],
+      "pronunciation": "in-sha-AL-lah"
+    },
+
+    /* ========== CALLS AND ATTENTION-GETTERS ========== */
+    {
+      "id": "hali_1",
+      "tausug": "Hali",
+      "english": "come here",
+      "definition": "Used to call someone to come.",
+      "examples": [
+        {
+          "tausug": "Hali kaw diyan!",
+          "english": "Come here!"
+        },
+        {
+          "tausug": "Hali na kita.",
+          "english": "Come on, let's go."
+        }
+      ],
+      "pronunciation": "ha-LEE"
+    },
+    {
+      "id": "halina_1",
+      "tausug": "Halina",
+      "english": "come, let's go",
+      "definition": "Gentle invitation or call to come along.",
+      "examples": [
+        {
+          "tausug": "Halina, magkaun kita.",
+          "english": "Come, let's eat."
+        }
+      ],
+      "pronunciation": "ha-lee-NA"
+    },
+    {
+      "id": "huy_1",
+      "tausug": "Huy",
+      "english": "hey",
+      "definition": "Used to get someone's attention.",
+      "examples": [
+        {
+          "tausug": "Huy! Kadayaw!",
+          "english": "Hey! Look!"
+        }
+      ],
+      "pronunciation": "hoo-EE"
+    },
+
+    /* ========== INTERJECTION SUMMARY ========== */
+    {
+      "id": "pangtarsanggang_summary",
+      "tausug": "Pangtarsanggang",
+      "english": "Interjections Overview",
+      "definition": "Words or phrases that express strong emotion or sudden reaction in Tausug.",
+      "examples": [
+        {
+          "tausug": "Salamat - pagpasalamat",
+          "english": "Thank you - expressing gratitude"
+        },
+        {
+          "tausug": "Ay - pagkagulat",
+          "english": "Oh - expressing surprise"
+        },
+        {
+          "tausug": "Astaghfirullah - pagsubo",
+          "english": "God forgive me - expressing regret"
+        },
+        {
+          "tausug": "Masha'Allah - pagdayaw",
+          "english": "God has willed it - expressing admiration"
+        }
+      ],
+      "pronunciation": "pang-tar-sang-GANG",
+      "notes": "Interjections add emotional color to Tausug speech and reflect Islamic cultural influences."
+    }
+  ]
+}
