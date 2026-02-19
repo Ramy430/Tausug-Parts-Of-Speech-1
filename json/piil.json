@@ -1,1 +1,251 @@
+{
+  "vocabulary": [
+    /* ========== ACTION VERBS ========== */
+    {
+      "id": "kita_1",
+      "tausug": "Kita",
+      "english": "see, look",
+      "definition": "To perceive with the eyes; to observe.",
+      "examples": [
+        {
+          "tausug": "Kita ku kaw ha iskul kagabii.",
+          "english": "I saw you at school yesterday."
+        },
+        {
+          "tausug": "Kita kaw sin dagat!",
+          "english": "Look at the sea!"
+        }
+      ],
+      "pronunciation": "KEE-ta",
+      "notes": "Different meaning from the pronoun 'kita' (we inclusive)."
+    },
+    {
+      "id": "dagan_1",
+      "tausug": "Dagan",
+      "english": "run",
+      "definition": "To move at a speed faster than a walk.",
+      "examples": [
+        {
+          "tausug": "Dagan siya bang mangadjat in ulan.",
+          "english": "He runs when the rain starts."
+        }
+      ],
+      "pronunciation": "DA-gan"
+    },
+    {
+      "id": "hulag_1",
+      "tausug": "Hulag",
+      "english": "move",
+      "definition": "To change position or go from one place to another.",
+      "examples": [
+        {
+          "tausug": "Ayaw hulag!",
+          "english": "Don't move!"
+        }
+      ],
+      "pronunciation": "hoo-LAG"
+    },
+    {
+      "id": "tulug_1",
+      "tausug": "Tulug",
+      "english": "sleep",
+      "definition": "To rest in a state of reduced consciousness.",
+      "examples": [
+        {
+          "tausug": "Tulug na aku kay' kapuyan na.",
+          "english": "I'm going to sleep now because I'm tired."
+        }
+      ],
+      "pronunciation": "too-LOOG"
+    },
+    {
+      "id": "kaun_2",
+      "tausug": "Kaun",
+      "english": "eat",
+      "definition": "To put food into the mouth and chew and swallow it.",
+      "examples": [
+        {
+          "tausug": "Kaun na kita sin pagkaun.",
+          "english": "Let's eat the food now."
+        }
+      ],
+      "pronunciation": "KA-oon",
+      "notes": "Same spelling as the noun 'kaun' (food/meal) but different function."
+    },
+    {
+      "id": "inum_1",
+      "tausug": "Inum",
+      "english": "drink",
+      "definition": "To take liquid into the mouth and swallow.",
+      "examples": [
+        {
+          "tausug": "Inum tubig bang kauhaw.",
+          "english": "Drink water when thirsty."
+        }
+      ],
+      "pronunciation": "EE-noom"
+    },
+    {
+      "id": "bassa_1",
+      "tausug": "Bassa",
+      "english": "read",
+      "definition": "To look at and comprehend the meaning of written or printed matter.",
+      "examples": [
+        {
+          "tausug": "Bassa aku sin libro kada adlaw.",
+          "english": "I read a book every day."
+        }
+      ],
+      "pronunciation": "bas-SA"
+    },
+    {
+      "id": "sulat_1",
+      "tausug": "Sulat",
+      "english": "write",
+      "definition": "To mark letters, words, or other symbols on a surface.",
+      "examples": [
+        {
+          "tausug": "Sulat ku in ngan ku ha katas.",
+          "english": "I write my name on the paper."
+        }
+      ],
+      "pronunciation": "soo-LAT"
+    },
 
+    /* ========== ADDITIONAL COMMON VERBS ========== */
+    {
+      "id": "lakaw_1",
+      "tausug": "Lakaw",
+      "english": "walk, go",
+      "definition": "To move from one place to another on foot.",
+      "examples": [
+        {
+          "tausug": "Lakaw kita pa bay.",
+          "english": "Let's walk home."
+        }
+      ],
+      "pronunciation": "LA-kaw"
+    },
+    {
+      "id": "sakay_1",
+      "tausug": "Sakay",
+      "english": "ride, board",
+      "definition": "To get on or into a vehicle for transportation.",
+      "examples": [
+        {
+          "tausug": "Sakay kita sin kappal pa Jolo.",
+          "english": "Let's ride the ship to Jolo."
+        }
+      ],
+      "pronunciation": "sa-KAI"
+    },
+    {
+      "id": "hatud_1",
+      "tausug": "Hatud",
+      "english": "bring, deliver",
+      "definition": "To carry or transport something to a destination.",
+      "examples": [
+        {
+          "tausug": "Hatud ku in regalu ha kumpanyu.",
+          "english": "I will bring the gift to my friend."
+        }
+      ],
+      "pronunciation": "ha-TOOD"
+    },
+    {
+      "id": "tabang_1",
+      "tausug": "Tabang",
+      "english": "help, assist",
+      "definition": "To make it easier for someone to do something.",
+      "examples": [
+        {
+          "tausug": "Tabangi aku magbuhat sin bay.",
+          "english": "Help me build the house."
+        }
+      ],
+      "pronunciation": "TA-bang"
+    },
+    {
+      "id": "sabut_1",
+      "tausug": "Sabut",
+      "english": "understand",
+      "definition": "To comprehend or grasp the meaning of something.",
+      "examples": [
+        {
+          "tausug": "Sabut ku in Tausug.",
+          "english": "I understand Tausug."
+        }
+      ],
+      "pronunciation": "SA-boot"
+    },
+    {
+      "id": "hulat_1",
+      "tausug": "Hulat",
+      "english": "wait",
+      "definition": "To stay in place until something happens.",
+      "examples": [
+        {
+          "tausug": "Hulat kaw ha bay.",
+          "english": "Wait at the house."
+        }
+      ],
+      "pronunciation": "hoo-LAT"
+    },
+    {
+      "id": "tindug_1",
+      "tausug": "Tindug",
+      "english": "stand",
+      "definition": "To be in an upright position on one's feet.",
+      "examples": [
+        {
+          "tausug": "Tindug kaw bang may madtu.",
+          "english": "Stand up when someone comes."
+        }
+      ],
+      "pronunciation": "tin-DOOG"
+    },
+    {
+      "id": "lingkud_1",
+      "tausug": "Lingkud",
+      "english": "sit",
+      "definition": "To rest one's weight on one's buttocks.",
+      "examples": [
+        {
+          "tausug": "Lingkud kaw ha bangku.",
+          "english": "Sit on the chair."
+        }
+      ],
+      "pronunciation": "ling-KOOD"
+    },
+
+    /* ========== VERB TENSES AND ASPECTS ========== */
+    {
+      "id": "kaun_past_1",
+      "tausug": "Nagkaun",
+      "english": "ate (past tense)",
+      "definition": "Past tense form of kaun (to eat), indicating completed action.",
+      "examples": [
+        {
+          "tausug": "Nagkaun na aku.",
+          "english": "I already ate."
+        }
+      ],
+      "pronunciation": "nag-KA-oon",
+      "notes": "The prefix 'nag-' indicates past tense for many verbs."
+    },
+    {
+      "id": "kaun_future_1",
+      "tausug": "Makaun",
+      "english": "will eat (future tense)",
+      "definition": "Future tense form of kaun (to eat), indicating action yet to happen.",
+      "examples": [
+        {
+          "tausug": "Makaun aku later.",
+          "english": "I will eat later."
+        }
+      ],
+      "pronunciation": "ma-KA-oon",
+      "notes": "The prefix 'ma-' indicates future tense for many verbs."
+    }
+  ]
+}
