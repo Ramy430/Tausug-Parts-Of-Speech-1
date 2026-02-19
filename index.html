@@ -21,6 +21,7 @@
             font-size: 1.2rem;
             padding: 20px;
             margin-bottom: 30px;
+            width: 100%;
         }
         
         .dictionary-btn:hover {
@@ -52,45 +53,13 @@
             box-shadow: 0 0 0 3px rgba(44, 82, 130, 0.1);
         }
         
-        .filter-buttons {
-            display: flex;
-            gap: 10px;
-            flex-wrap: wrap;
-            margin-bottom: 20px;
-        }
-        
-        .filter-btn {
-            padding: 8px 16px;
-            border: 1px solid var(--border-color);
-            background: white;
-            border-radius: 20px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            font-size: 0.9rem;
-        }
-        
-        .filter-btn:hover {
-            background: var(--primary-color);
-            color: white;
-            border-color: var(--primary-color);
-        }
-        
-        .filter-btn.active {
-            background: var(--primary-color);
-            color: white;
-            border-color: var(--primary-color);
-        }
-        
         .dictionary-stats {
             background: var(--background-light);
             padding: 15px;
             border-radius: var(--border-radius);
             margin-bottom: 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 15px;
+            text-align: center;
+            font-size: 1.1rem;
         }
         
         .part-badge {
@@ -209,26 +178,10 @@
             <!-- Single display space for dictionary -->
             <div id="dictionaryContainer" style="display: none;">
                 <div class="dictionary-stats">
-                    <div>
-                        <strong id="totalEntries">0</strong> entries found
-                        <span id="filteredCount" style="display: none;">, showing <span id="currentCount">0</span></span>
-                    </div>
+                    <strong id="totalEntries">0</strong> entries in dictionary
                 </div>
                 
                 <input type="text" class="search-box" id="searchInput" placeholder="Search in Tausug or English...">
-                
-                <div class="filter-buttons" id="filterButtons">
-                    <button class="filter-btn active" data-part="all">All</button>
-                    <button class="filter-btn" data-part="ngan">Nouns</button>
-                    <button class="filter-btn" data-part="ganti">Pronouns</button>
-                    <button class="filter-btn" data-part="piil">Verbs</button>
-                    <button class="filter-btn" data-part="papata">Adjectives</button>
-                    <button class="filter-btn" data-part="kahantang">Adverbs</button>
-                    <button class="filter-btn" data-part="parbutangan">Prepositions</button>
-                    <button class="filter-btn" data-part="panglangkum">Conjunctions</button>
-                    <button class="filter-btn" data-part="pangtarsanggang">Interjections</button>
-                    <button class="filter-btn" data-part="hurop">Articles</button>
-                </div>
                 
                 <!-- SINGLE RESULTS CONTAINER -->
                 <div id="resultsContainer">
@@ -250,11 +203,8 @@
         const resultsContainer = document.getElementById('resultsContainer');
         const searchInput = document.getElementById('searchInput');
         const totalEntriesSpan = document.getElementById('totalEntries');
-        const filteredCountSpan = document.getElementById('filteredCount');
-        const currentCountSpan = document.getElementById('currentCount');
         
         let allEntries = [];
-        let currentFilter = 'all';
         let currentSearch = '';
         
         // Part mapping for display
@@ -296,21 +246,13 @@
                 dictionaryContainer.style.display = 'none';
                 dictionaryBtn.innerHTML = '<i class="btn-icon fas fa-book-open"></i> Open Dictionary (All Words)';
                 resultsContainer.innerHTML = ''; // Clear results
+                searchInput.value = ''; // Clear search
             }
         });
         
         searchInput.addEventListener('input', function() {
             currentSearch = this.value.toLowerCase();
             filterAndDisplayEntries();
-        });
-        
-        document.querySelectorAll('.filter-btn').forEach(btn => {
-            btn.addEventListener('click', function() {
-                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-                this.classList.add('active');
-                currentFilter = this.dataset.part;
-                filterAndDisplayEntries();
-            });
         });
         
         async function loadAllEntries() {
@@ -336,33 +278,22 @@
             }
             
             totalEntriesSpan.textContent = allEntries.length;
-            filterAndDisplayEntries();
+            
+            // Show all entries initially
+            displayEntries(allEntries);
         }
         
         function filterAndDisplayEntries() {
-            let filtered = allEntries;
-            
-            // Apply part filter
-            if (currentFilter !== 'all') {
-                filtered = filtered.filter(entry => entry.part === currentFilter);
+            if (!currentSearch) {
+                displayEntries(allEntries);
+                return;
             }
             
-            // Apply search filter
-            if (currentSearch) {
-                filtered = filtered.filter(entry => 
-                    entry.tausug.toLowerCase().includes(currentSearch) ||
-                    entry.english.toLowerCase().includes(currentSearch) ||
-                    (entry.definition && entry.definition.toLowerCase().includes(currentSearch))
-                );
-            }
-            
-            // Update counts
-            currentCountSpan.textContent = filtered.length;
-            if (filtered.length < allEntries.length) {
-                filteredCountSpan.style.display = 'inline';
-            } else {
-                filteredCountSpan.style.display = 'none';
-            }
+            const filtered = allEntries.filter(entry => 
+                entry.tausug.toLowerCase().includes(currentSearch) ||
+                entry.english.toLowerCase().includes(currentSearch) ||
+                (entry.definition && entry.definition.toLowerCase().includes(currentSearch))
+            );
             
             displayEntries(filtered);
         }
@@ -373,7 +304,7 @@
                     <div class="no-results">
                         <i class="fas fa-search"></i>
                         <h3>No entries found</h3>
-                        <p>Try adjusting your search or filter.</p>
+                        <p>Try a different search term.</p>
                     </div>
                 `;
                 return;
