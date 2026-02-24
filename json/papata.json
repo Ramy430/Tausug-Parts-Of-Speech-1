@@ -218,7 +218,7 @@
       "definition": "Specifically describes feminine beauty.",
       "examples": [
         {
-          "tausug": "Pangit in kuting ku.",
+          "tausug": "Mangi'dagbus in kuting ku.",
           "english": "My cat is ugly."
         }
       ],
@@ -234,7 +234,7 @@
       "definition": "A large number of.",
       "examples": [
         {
-          "tausug": "Mataud tawo ha piyista.",
+          "tausug": "Mataud tau ha piyista.",
           "english": "There are many people at the festival."
         },
         {
@@ -254,7 +254,7 @@
       "definition": "Costing a lot of money.",
       "examples": [
         {
-          "tausug": "Mahal in karita bago.",
+          "tausug": "Mahalga' in karita bago.",
           "english": "The new car is expensive."
         },
         {
@@ -262,7 +262,7 @@
           "english": "The fruits at the market are expensive."
         }
       ],
-      "pronunciation": "ma-HAL",
+      "pronunciation": "ma-HAL-ga'",
       "antonyms": ["Mura"]
     },
     {
@@ -272,12 +272,12 @@
       "definition": "Low in price; worth more than its cost.",
       "examples": [
         {
-          "tausug": "Mura in manga prutas ha talipapa.",
+          "tausug": "Maluhay in manga prutas ha talipapa.",
           "english": "The fruits at the market are cheap."
         }
       ],
-      "pronunciation": "moo-RA",
-      "antonyms": ["Mahal"]
+      "pronunciation": "ma-lu=HAI",
+      "antonyms": ["Mahalga'"]
     },
 
     /* ========== TEMPERATURE ADJECTIVES ========== */
@@ -288,11 +288,11 @@
       "definition": "Having a high degree of heat or a high temperature.",
       "examples": [
         {
-          "tausug": "Mapasu in kape, ayaw hilabti.",
+          "tausug": "Mapasu in kahawa, ayaw hilabti.",
           "english": "The coffee is hot, don't touch it."
         },
         {
-          "tausug": "Mapasu in adlaw.",
+          "tausug": "Mapasu' in suga.",
           "english": "The sun is hot."
         }
       ],
@@ -300,21 +300,21 @@
       "antonyms": ["Malamig"]
     },
     {
-      "id": "malamig_1",
-      "tausug": "Malamig",
+      "id": "mahagpay_1",
+      "tausug": "Mahagpay",
       "english": "cold",
       "definition": "Of or at a low or relatively low temperature.",
       "examples": [
         {
-          "tausug": "Malamig in tubig ha sulod sin refrigerator.",
+          "tausug": "Malahagpay in tubig ha sulod sin refrigerator.",
           "english": "The water inside the refrigerator is cold."
         },
         {
-          "tausug": "Malamig in hangin kuman.",
+          "tausug": "Mahagpay in hangin kuman.",
           "english": "The wind is cold now."
         }
       ],
-      "pronunciation": "ma-la-MEEG",
+      "pronunciation": "ma-hag-PAI",
       "antonyms": ["Mapasu"]
     },
 
@@ -326,34 +326,34 @@
       "definition": "Easy to mold, cut, compress, or fold; not hard or firm to the touch.",
       "examples": [
         {
-          "tausug": "Malum in kama', marayaw katulugan.",
+          "tausug": "Malunuk in kama', marayaw pagtugan.",
           "english": "The bed is soft, good for sleeping."
         },
         {
-          "tausug": "Malum in unlan.",
+          "tausug": "Malunuk in unlan.",
           "english": "The pillow is soft."
         }
       ],
-      "pronunciation": "ma-LOOM",
+      "pronunciation": "ma-lu-nuk",
       "antonyms": ["Matagus"]
     },
     {
-      "id": "matagus_1",
-      "tausug": "Matagus",
+      "id": "matagas_1",
+      "tausug": "Matagas",
       "english": "hard",
       "definition": "Solid, firm, and resistant to pressure; not easily broken or bent.",
       "examples": [
         {
-          "tausug": "Matagus in batu, di' mabali.",
+          "tausug": "Matugas in batu, di' mabali.",
           "english": "The stone is hard, it won't break."
         },
         {
-          "tausug": "Matagus in kahoy.",
+          "tausug": "Matugas in kahoy.",
           "english": "The wood is hard."
         }
       ],
-      "pronunciation": "ma-TA-goos",
-      "antonyms": ["Malum"]
+      "pronunciation": "ma-TU-gaas",
+      "antonyms": ["Malunuk"]
     },
     {
       "id": "mahapdi_1",
