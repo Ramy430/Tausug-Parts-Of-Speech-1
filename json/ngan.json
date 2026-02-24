@@ -7,12 +7,12 @@
       "definition": "The end part of a person's arm beyond the wrist; the number after four.",
       "examples": [
         {
-          "tausug": "Masakit in lima ku sabab nagdala aku sin mabugat.",
+          "tausug": "Masakit in lima ku sabab nagda aku sin mabugat.",
           "english": "My hand hurts because I carried something heavy.",
           "context": "As body part"
         },
         {
-          "tausug": "Lima in manga bata' ha sulod sin bāy.",
+          "tausug": "Lima in manga bata' ha lawum sin bāy.",
           "english": "There are five children inside the house.",
           "context": "As number"
         }
@@ -27,7 +27,7 @@
       "definition": "Any of the fine threadlike strands growing from the skin of mammals.",
       "examples": [
         {
-          "tausug": "Haba' in buhuk sin anak ku babai.",
+          "tausug": "Mahaba' in buhuk sin anak ku babai.",
           "english": "My daughter's hair is long."
         }
       ],
@@ -53,8 +53,8 @@
       "definition": "A discoloration of the skin resulting from bleeding underneath, typically caused by injury.",
       "examples": [
         {
-          "tausug": "May alum in bukun ku sabab nahulug aku.",
-          "english": "I have a bruise on my leg because I fell."
+          "tausug": "May alum in buktun ku tuo sabab nahulug aku.",
+          "english": "I have a bruise on my right arm because I fell."
         }
       ],
       "pronunciation": "A-loom",
@@ -71,7 +71,7 @@
           "english": "Their house by the sea is beautiful."
         },
         {
-          "tausug": "Miss ku na in bay ku ha Jolo.",
+          "tausug": "Magdandam aku  sin bay ku ha Jolo.",
           "english": "I miss my home in Jolo already."
         }
       ],
@@ -86,12 +86,12 @@
       "definition": "A human being regarded as an individual.",
       "examples": [
         {
-          "tausug": "Mabayat in tau ha lalawigan sin Sulu.",
+          "tausug": "Marayaw in tau ha probensiya sin Sulu.",
           "english": "The people in the province of Sulu are kind."
         }
       ],
       "pronunciation": "TA-oo",
-      "variants": ["Tao", "Two"]
+      "variants": ["Tao", "Tawo"]
     },
     {
       "id": "manusiya_1",
@@ -100,7 +100,7 @@
       "definition": "Human beings collectively; the human race.",
       "examples": [
         {
-          "tausug": "In manga manusiya' subay magdaru'ungan.",
+          "tausug": "In manga manusiya' subay magtabang tiyabangi hambuuk pa hambuuk.",
           "english": "People should help each other."
         }
       ],
@@ -114,7 +114,7 @@
       "definition": "Any nutritious substance that people or animals eat or drink.",
       "examples": [
         {
-          "tausug": "Masarap in kakaun ha handaan.",
+          "tausug": "Masarap in kakaun ha hayliya.",
           "english": "The food at the feast is delicious."
         }
       ],
@@ -127,7 +127,7 @@
       "definition": "An instance of eating; the food consumed during a meal.",
       "examples": [
         {
-          "tausug": "Kaun na kita!",
+          "tausug": "Kumaun na kita biyhayaun!",
           "english": "Let's eat now!"
         }
       ],
@@ -141,7 +141,7 @@
       "definition": "A series of thoughts, images, and sensations occurring in a person's mind during sleep.",
       "examples": [
         {
-          "tausug": "May aku tagainup kagabi' bang siya magbalik.",
+          "tausug": "Awun aku tagainup kabii' na magbalik kunu' siya .",
           "english": "I had a dream last night that he would return."
         }
       ],
@@ -154,7 +154,7 @@
       "definition": "An injury to living tissue caused by a cut, blow, or other impact.",
       "examples": [
         {
-          "tausug": "Maluma' na in pali' ha bukun ku.",
+          "tausug": "Imuuli' na biyhaun in pali' ha paa ku.",
           "english": "The wound on my leg is healing now."
         }
       ],
@@ -167,8 +167,8 @@
       "definition": "Material manufactured in thin sheets from the pulp of wood.",
       "examples": [
         {
-          "tausug": "Katas ini para ha surat.",
-          "english": "This paper is for the letter."
+          "tausug": "In katas ini usalun para ha sulat.",
+          "english": "This paper is to be used for the letter."
         }
       ],
       "pronunciation": "KA-tas"
@@ -194,7 +194,7 @@
       "definition": "A covering for the foot, typically made of leather.",
       "examples": [
         {
-          "tausug": "Bago in kapatus sin anak ku lalaki.",
+          "tausug": "Bago in kapatus sin anak ku usug.",
           "english": "My son's shoes are new."
         }
       ],
@@ -207,7 +207,7 @@
       "definition": "Garment worn on the feet, especially lightweight open shoes.",
       "examples": [
         {
-          "tausug": "Marayaw in tawumpa' ha init.",
+          "tausug": "Marayaw in tawumpa' ha musim 'mapasu'.",
           "english": "Sandals are good for hot weather."
         }
       ],
@@ -234,7 +234,7 @@
       "definition": "A road vehicle, typically with four wheels, powered by an engine.",
       "examples": [
         {
-          "tausug": "Bago in karita sin tuan.",
+          "tausug": "Bago in karita sin usug.",
           "english": "The man's car is new."
         }
       ],
@@ -262,7 +262,7 @@
       "definition": "The color black itself, when referred to as a concept.",
       "examples": [
         {
-          "tausug": "Kabayaan ku in itum.",
+          "tausug": "Mabaya' ku in itum.",
           "english": "I like black (the color)."
         }
       ],
@@ -276,7 +276,7 @@
       "definition": "The color white itself.",
       "examples": [
         {
-          "tausug": "Maganda in puti' ha badju'.",
+          "tausug": "Maamu in puti' ha badju'.",
           "english": "White looks nice on clothing."
         }
       ],
@@ -289,7 +289,7 @@
       "definition": "The color red itself.",
       "examples": [
         {
-          "tausug": "In pula simbolu sin paghigugma.",
+          "tausug": "In pula alamat sin paglasa.",
           "english": "Red is a symbol of love."
         }
       ],
@@ -302,7 +302,7 @@
       "definition": "The color yellow itself.",
       "examples": [
         {
-          "tausug": "Biyaning in kulay sin adlaw.",
+          "tausug": "Biyaning in walna' sin adlaw.",
           "english": "Yellow is the color of the sun."
         }
       ],
@@ -315,7 +315,7 @@
       "definition": "The color green itself.",
       "examples": [
         {
-          "tausug": "Gaddung in kulay sin kabon.",
+          "tausug": "Gaddung in walna' sin ka'bon.",
           "english": "Green is the color of the forest."
         }
       ],
@@ -328,7 +328,7 @@
       "definition": "The color blue itself.",
       "examples": [
         {
-          "tausug": "Bilo in kulay sin langit.",
+          "tausug": "Bilo in walnah' sin langit.",
           "english": "Blue is the color of the sky."
         }
       ],
@@ -341,7 +341,7 @@
       "definition": "The color brown itself.",
       "examples": [
         {
-          "tausug": "Abuhun in kulay sin yuta'.",
+          "tausug": "Abuhun in walna' sin yuta'.",
           "english": "Brown is the color of the soil."
         }
       ],
